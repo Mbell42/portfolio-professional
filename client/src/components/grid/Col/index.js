@@ -2,7 +2,7 @@
 
 //COL
 //This allows for <Col size="md-12"> instead of <div className="col-md-12">
-export function Col({ size, children }) {
+function Col({ size, children }) {
     return (
         <div className={
             size
@@ -14,3 +14,5 @@ export function Col({ size, children }) {
         </div>
     );
 };
+
+export default Col;
