@@ -10,6 +10,11 @@ import GalleryCode from "./pages/GalleryCode";
 import GalleryVFX from "./pages/GalleryVFX";
 
 //  Components
+//    grid components
+import Container from "./components/grid/Container";
+import Row from "./components/grid/Row";
+import Col from "./components/grid/Col";
+
 import Jumbotron from "./components/Jumbotron";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -19,6 +24,7 @@ import "./App.css";
 // App
 function App () {
     return (
+      <Container>
         <Jumbotron>
           <Router>
             <div>
@@ -34,8 +40,9 @@ function App () {
             </div>
           </Router>
         </Jumbotron>
-        
+
         <Footer></Footer>
+      </Container>
     );
 }
 
