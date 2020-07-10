@@ -11,9 +11,10 @@ import GalleryVFX from "./pages/GalleryVFX";
 
 //  Components
 //    grid components
-import Container from "./components/grid/Container";
-import Row from "./components/grid/Row";
-import Col from "./components/grid/Col";
+import Container from "./components/Grid";
+import Row from "./components/Grid";
+import Col from "./components/Grid";
+
 
 import Jumbotron from "./components/Jumbotron";
 import Nav from "./components/Nav";
