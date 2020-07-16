@@ -2,10 +2,26 @@
 import React from "react";
 
 //PAGE
-const GalleryCode = () => {
-    return (
-        <div>Gallery Code Page</div>
-    );
-};
+class GalleryVFX extends React.Component {
+    state = {
+        collapsed: false
+    };
 
-export default GalleryCode;
+    handleTogglerClick = () => {
+        const { collapsed } = this.state;
+
+        this.setState({
+        collapsed: !collapsed
+        });
+    };
+
+    render() {
+        const { collapsed } = this.state;
+
+        return (
+            <div></div>
+        );
+    }
+}
+
+export default GalleryVFX;
