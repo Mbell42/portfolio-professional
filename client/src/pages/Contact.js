@@ -22,7 +22,7 @@ class Contact extends React.Component {
         const { collapsed } = this.state;
 
         return (
-            <MDBContainer className="galleryCodeContainer">
+            <MDBContainer className="contactContainer">
                 <section className="my-5">
                     <h2 className="h1-responsive font-weight-bold text-center my-5">
                     Contact us

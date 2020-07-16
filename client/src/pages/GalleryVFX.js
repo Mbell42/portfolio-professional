@@ -22,7 +22,7 @@ class GalleryVFX extends React.Component {
         const { collapsed } = this.state;
 
         return (
-            <MDBContainer className="galleryCodeContainer">
+            <MDBContainer className="galleryVFXContainer">
                 <section className="text-center my-5">
                     <h2 className="h1-responsive font-weight-bold my-5">
                         Our best projects
