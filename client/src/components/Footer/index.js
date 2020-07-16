@@ -14,6 +14,7 @@ const Footer = () => {
               phone: 858-922-5440
             </p>
           </MDBCol>
+          
           <MDBCol md="6">
             <h5 className="title text-center">Links</h5>
             <ul>
@@ -42,6 +43,7 @@ const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
+      
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
         <p class="text-center">
