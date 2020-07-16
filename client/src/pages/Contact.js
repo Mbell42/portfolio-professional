@@ -25,7 +25,7 @@ class Contact extends React.Component {
             <MDBContainer className="contactContainer">
                 <section className="my-5">
                     <h2 className="h1-responsive font-weight-bold text-center my-5">
-                    Contact us
+                    Contact me
                     </h2>
                     <p className="text-center w-responsive mx-auto pb-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
@@ -36,13 +36,13 @@ class Contact extends React.Component {
                     <MDBCol lg="5" className="lg-0 mb-4">
                         <MDBCard>
                         <MDBCardBody>
-                            <div className="form-header blue accent-1">
+                            <div className="form-header indigo accent-1">
                             <h3 className="mt-2">
-                                <MDBIcon icon="envelope" /> Write to us:
+                                <MDBIcon icon="envelope" /> Send me a message:
                             </h3>
                             </div>
-                            <p className="dark-grey-text">
-                            We'll write rarely, but only the best content.
+                            <p className="font-small dark-grey-text">
+                            If you have a project you would like to collaborate on, write me!
                             </p>
                             <div className="md-form">
                             <MDBInput
@@ -74,14 +74,14 @@ class Contact extends React.Component {
                             <div className="md-form">
                             <MDBInput
                                 icon="pencil-alt"
-                                label="Icon Prefix"
+                                label="Message"
                                 iconClass="grey-text"
                                 type="textarea"
                                 id="form-text"
                             />
                             </div>
                             <div className="text-center">
-                            <MDBBtn color="light-blue">Submit</MDBBtn>
+                            <MDBBtn color="indigo">Submit</MDBBtn>
                             </div>
                         </MDBCardBody>
                         </MDBCard>
@@ -104,21 +104,21 @@ class Contact extends React.Component {
                         <br />
                         <MDBRow className="text-center">
                         <MDBCol md="4">
-                            <MDBBtn tag="a" color="blue" className="accent-1">
+                            <MDBBtn tag="a" color="indigo" className="accent-1">
                             <MDBIcon icon="map-marker-alt" />
                             </MDBBtn>
                             <p>La Mesa, 91942</p>
                             <p className="mb-md-0">United States</p>
                         </MDBCol>
                         <MDBCol md="4">
-                            <MDBBtn tag="a" color="blue" className="accent-1">
+                            <MDBBtn tag="a" color="indigo" className="accent-1">
                             <MDBIcon icon="phone" />
                             </MDBBtn>
                             <p>+ 01 858 922 5440</p>
                             <p className="mb-md-0">Mon - Fri, 8:00-20:00</p>
                         </MDBCol>
                         <MDBCol md="4">
-                            <MDBBtn tag="a" color="blue" className="accent-1">
+                            <MDBBtn tag="a" color="indigo" className="accent-1">
                             <MDBIcon icon="envelope" />
                             </MDBBtn>
                             <p>matthewbell1030@gmail.com</p>
