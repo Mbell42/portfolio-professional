@@ -1,0 +1,8 @@
+#minimalistintro .view {
+  min-height: 100vh !important;
+  height: unset !important;
+}
+.homeContainer{
+  height: 100%;
+  padding-top: 17rem
+}
