@@ -25,17 +25,17 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
-        <MDBNavbar color="secondary-color-dark" dark expand="md">
+        <MDBNavbar className="navbar fixed-top" color="secondary-color-dark" dark expand="md" scrolling>
             {/* Logo */}
             <MDBNavbarBrand>
-                <MDBNavLink to="/"><strong className="white-text">MB</strong></MDBNavLink>
+                <MDBNavLink to="/home"><strong className="white-text">MB</strong></MDBNavLink>
             </MDBNavbarBrand>
             <MDBNavbarToggler onClick={this.toggleCollapse} />
             <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             {/* Left side of NavBar */}
             <MDBNavbarNav left>
                 <MDBNavItem active>
-                    <MDBNavLink to="/">Home</MDBNavLink>
+                    <MDBNavLink to="/home">Home</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
                     <MDBNavLink to="about">About</MDBNavLink>
@@ -83,60 +83,6 @@ render() {
     </Router>
     );
   }
-  
 }
+
 export default Nav;
-
-
-//         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-//             <Link className="navbar-brand" to="/">
-//                 <img
-//                     className="img-logo"
-//                     alt="logo"
-//                     src="#"/>
-//             </Link>
-//             <div>
-//                 <ul className="navbar-nav">
-//                     <li className="nav-item">
-//                         <Link to="/about" className={
-//                             window.location.pathname === '/about'
-//                             ? 'nav-link active'
-//                             : 'nav-link'
-//                             }>
-//                             About
-//                         </Link>
-//                     </li>
-//                     <li className="nav-item">
-//                         <Link to="/contact" className={
-//                             window.location.pathname === '/contact'
-//                             ? 'nav-link active'
-//                             : 'nav-link'
-//                             }>
-//                             Contact
-//                         </Link>
-//                     </li>
-//                     <li className="nav-item">
-//                         <Link to="/gallery_code" className={
-//                             window.location.pathname === '/gallery_code'
-//                             ? 'nav-link active'
-//                             : 'nav-link'
-//                             }>
-//                             Code Gallery
-//                         </Link>
-//                     </li>
-//                     <li className="nav-item">
-//                         <Link to="/gallery_vfx" className={
-//                             window.location.pathname === '/gallery_vfx'
-//                             ? 'nav-link active'
-//                             : 'nav-link'
-//                             }>
-//                             VFX Gallery
-//                         </Link>
-//                     </li>
-//                 </ul>
-//             </div>
-//         </nav>
-//     );
-// }
-
-// export default Nav;

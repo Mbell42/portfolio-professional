@@ -15,7 +15,6 @@ function App () {
     return (
       <>
       <Nav />
-      <div className="pageContent"></div>
       <Footer />
       </>
     );
