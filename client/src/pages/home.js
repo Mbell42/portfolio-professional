@@ -13,6 +13,8 @@ import {
 import '../App.js'
 import './css/pages.css';
 
+import mbSquare from "../images/portrait/mbSquare.jpg"
+
 //PAGE
 class Home extends React.Component {
   state = {
@@ -51,14 +53,14 @@ class Home extends React.Component {
                       I learn new skills quickly, with the ability to pivot and take on new 
                       challenges. I am seeking a transition into Web and Software Development.
                     </p>
-                    <MDBBtn outline color='white'>About Me</MDBBtn>
-                    <MDBBtn outline color='white'>Contact Me</MDBBtn>
+                    <MDBBtn outline color='white'><a href="/about">Read More</a></MDBBtn>
+                    <MDBBtn outline color='white'><a href="/contact">Contact Me</a></MDBBtn>
                     
                 </MDBCol>
                 {/* Right Column will contain image */}
                 <MDBCol md='4' className='mb-4'>
-                    <h5 className="white-text text-center">Image Here</h5>
-                    <img src="https://mdbootstrap.com/img/Others/documentation/1.jpg" className="img-fluid" alt="" />
+                    {/* <h5 className="white-text text-center">Image Here</h5> */}
+                    <img src={mbSquare} alt="Matthew Bell" className="img-fluid" height="350px" />
                 </MDBCol>
             </MDBRow>
           </MDBContainer>

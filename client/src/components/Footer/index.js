@@ -20,22 +20,29 @@ const Footer = () => {
             <ul>
               <li className="list-unstyled">
               <a href="https://github.com/Mbell42" target="_blank">
-                  <p class="text-center">
-                      Github Profile
+                  <p className="text-center">
+                      Github
                   </p>
                 </a>
               </li>
               <li className="list-unstyled">
                 <a href="https://www.linkedin.com/in/matthew-bell-developer-artist/" target="_blank">
-                  <p class="text-center">
-                      LinkedIn Profile
+                  <p className="text-center">
+                      LinkedIn
                   </p>
                 </a>
               </li>
               <li className="list-unstyled">
                 <a href="https://vimeo.com/matthewgbell" target="_blank">
-                  <p class="text-center">
-                      Vimeo Reel
+                  <p className="text-center">
+                      Vimeo
+                  </p>
+                </a>
+              </li>
+              <li className="list-unstyled">
+                <a href="https://www.imdb.com/name/nm7347199/?ref_=rvi_nm" target="_blank">
+                  <p className="text-center">
+                      IMDB
                   </p>
                 </a>
               </li>
@@ -46,7 +53,7 @@ const Footer = () => {
       
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-        <p class="text-center">
+        <p className="text-center">
             matthewbell1030@gmail.com<br />phone: 858-922-5440
           </p>
           &copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a>
