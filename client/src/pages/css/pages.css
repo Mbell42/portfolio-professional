@@ -1,0 +1,33 @@
+/* Home Page Styles */
+#minimalistintro .view {
+    min-height: 100vh !important;
+    height: unset !important;
+}
+.homeContainer{
+    height: 100%;
+    padding-top: 17rem
+}
+
+/* About Page Styles */
+.aboutContainer{
+    height: 100%;
+    padding-top: 17rem
+}
+
+/* Contact Page Styles */
+.contactContainer{
+    height: 100%;
+    padding-top: 17rem
+}
+
+/* GalleryCode Page Styles */
+.galleryCodeContainer{
+    height: 100%;
+    padding-top: 17rem
+}
+
+/* GalleryVFX Page Styles */
+.galleryVFXContainer{
+    height: 100%;
+    padding-top: 17rem
+}

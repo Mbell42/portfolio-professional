@@ -11,7 +11,7 @@ import {
 } from 'mdbreact';
 
 import '../App.js'
-import './css/home.css';
+import './css/pages.css';
 
 //PAGE
 class Home extends React.Component {
