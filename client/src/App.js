@@ -11,39 +11,36 @@ import GalleryVFX from "./pages/GalleryVFX";
 
 //  Components
 //    grid components
-import Container from "./components/Grid";
-import Row from "./components/Grid";
-import Col from "./components/Grid";
+// import Container from "./components/Grid";
+// import Row from "./components/Grid";
+// import Col from "./components/Grid";
 
 
-import Jumbotron from "./components/Jumbotron";
+// import Jumbotron from "./components/Jumbotron";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 import "./App.css";
 
 // App
 function App () {
     return (
-      <Container>
-        <Jumbotron>
-          <Router>
-            <div>
-              <Nav />
-              <Switch>
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/gallery_code" component={GalleryCode} />
-                <Route path="/gallery_vfx" component={GalleryVFX} />
-                <Route path="/home" component={Home} />
-                <Route exact path="/" component={Home} />
-              </Switch>
-            </div>
-          </Router>
-        </Jumbotron>
-
-        <Footer></Footer>
-      </Container>
+      <>
+        <Router>
+          <div>
+            <Nav />
+            <Switch>
+              <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/gallery_code" component={GalleryCode} />
+              <Route path="/gallery_vfx" component={GalleryVFX} />
+              <Route path="/home" component={Home} />
+              <Route exact path="/" component={Home} />
+            </Switch>
+          </div>
+        </Router>
+        {/* <Footer></Footer> */}
+      </>
     );
 }
 

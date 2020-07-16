@@ -23,7 +23,7 @@ function Nav() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className={
+                        <Link to="/contact" className={
                             window.location.pathname === '/contact'
                             ? 'nav-link active'
                             : 'nav-link'
@@ -32,7 +32,7 @@ function Nav() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className={
+                        <Link to="/Gallery_Code" className={
                             window.location.pathname === '/gallery_code'
                             ? 'nav-link active'
                             : 'nav-link'
@@ -41,7 +41,7 @@ function Nav() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className={
+                        <Link to="/Gallery_VFX" className={
                             window.location.pathname === '/gallery_vfx'
                             ? 'nav-link active'
                             : 'nav-link'
