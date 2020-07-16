@@ -93,8 +93,8 @@ class Contact extends React.Component {
                         style={{ height: "400px" }}
                         >
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d76765.98321148289!2d-73.96694563267306!3d40.751663750099084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1525939514494"
-                            title="This is a unique title"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d76765.98321148289!2d-117.0147!3d32.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1525939514494"
+                            title="La Mesa"
                             width="100%"
                             height="100%"
                             frameBorder="0"
@@ -107,22 +107,22 @@ class Contact extends React.Component {
                             <MDBBtn tag="a" color="blue" className="accent-1">
                             <MDBIcon icon="map-marker-alt" />
                             </MDBBtn>
-                            <p>New York, 94126</p>
+                            <p>La Mesa, 91942</p>
                             <p className="mb-md-0">United States</p>
                         </MDBCol>
                         <MDBCol md="4">
                             <MDBBtn tag="a" color="blue" className="accent-1">
                             <MDBIcon icon="phone" />
                             </MDBBtn>
-                            <p>+ 01 234 567 89</p>
-                            <p className="mb-md-0">Mon - Fri, 8:00-22:00</p>
+                            <p>+ 01 858 922 5440</p>
+                            <p className="mb-md-0">Mon - Fri, 8:00-20:00</p>
                         </MDBCol>
                         <MDBCol md="4">
                             <MDBBtn tag="a" color="blue" className="accent-1">
                             <MDBIcon icon="envelope" />
                             </MDBBtn>
-                            <p>info@gmail.com</p>
-                            <p className="mb-md-0">sale@gmail.com</p>
+                            <p>matthewbell1030@gmail.com</p>
+                            
                         </MDBCol>
                         </MDBRow>
                     </MDBCol>
