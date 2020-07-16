@@ -1,32 +1,29 @@
 //DEPENDENCIES
-//  React
+  //  React
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-//  Pages
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import GalleryCode from "./pages/GalleryCode";
-import GalleryVFX from "./pages/GalleryVFX";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-//  Components
-//    grid components
-// import Container from "./components/Grid";
-// import Row from "./components/Grid";
-// import Col from "./components/Grid";
+  //  Pages
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
+// import GalleryCode from "./pages/GalleryCode";
+// import GalleryVFX from "./pages/GalleryVFX";
 
-
+  // Components
 // import Jumbotron from "./components/Jumbotron";
 import Nav from "./components/Nav";
 // import Footer from "./components/Footer";
 
 import "./App.css";
 
-// App
+  // App
 function App () {
     return (
       <>
-        <Router>
+      <Nav />
+      
+        {/* <Router>
           <div>
             <Nav />
             <Switch>
@@ -38,7 +35,7 @@ function App () {
               <Route exact path="/" component={Home} />
             </Switch>
           </div>
-        </Router>
+        </Router> */}
         {/* <Footer></Footer> */}
       </>
     );
