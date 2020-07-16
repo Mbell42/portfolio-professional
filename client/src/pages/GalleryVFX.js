@@ -25,13 +25,10 @@ class GalleryVFX extends React.Component {
             <MDBContainer className="galleryVFXContainer">
                 <section className="text-center my-5">
                     <h2 className="h1-responsive font-weight-bold my-5">
-                        Our best projects
+                        VFX Gallery
                     </h2>
                     <p className="grey-text w-responsive mx-auto mb-5">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        est laborum.
+                        Some of the best VFX projects I have had the pleasure to take part in
                     </p>
 
                     <MDBRow className="text-center">
@@ -47,16 +44,17 @@ class GalleryVFX extends React.Component {
                             </a>
                         </MDBView>
                         <MDBCardBody className="pb-0">
-                            <h4 className="font-weight-bold my-3">Title of the news</h4>
+                            <h4 className="font-weight-bold my-3">Antman 3D (2015)</h4>
                             <p className="grey-text">
                             Temporibus autem quibusdam et aut officiis debitis aut rerum
                             necessitatibus saepe eveniet ut et voluptates repudiandae.
                             </p>
                             <MDBBtn color="indigo" size="sm">
-                            <MDBIcon far icon="clone" className="left" /> MDBView project
+                            <MDBIcon far icon="clone" className="left" /> View Here
                             </MDBBtn>
                         </MDBCardBody>
                         </MDBCol>
+
                         <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                         <MDBView className="overlay rounded z-depth-1" waves>
                             <img
@@ -69,20 +67,21 @@ class GalleryVFX extends React.Component {
                             </a>
                         </MDBView>
                         <MDBCardBody className="pb-0">
-                            <h4 className="font-weight-bold my-3">Title of the news</h4>
+                            <h4 className="font-weight-bold my-3">Poltergeist 3D (2016)</h4>
                             <p className="grey-text">
                             Temporibus autem quibusdam et aut officiis debitis aut rerum
                             necessitatibus saepe eveniet ut et voluptates repudiandae.
                             </p>
                             <MDBBtn color="indigo" size="sm">
-                            <MDBIcon far icon="clone" className="left" /> MDBView project
+                            <MDBIcon far icon="clone" className="left" /> View Here
                             </MDBBtn>
                         </MDBCardBody>
                         </MDBCol>
+
                         <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                         <MDBView className="overlay rounded z-depth-1" waves>
                             <img
-                            src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg"
+                            src="https://mdbootstrap.com/img/Photos/Others/project4.jpg"
                             alt=""
                             className="img-fluid"
                             />
@@ -91,13 +90,13 @@ class GalleryVFX extends React.Component {
                             </a>
                         </MDBView>
                         <MDBCardBody className="pb-0">
-                            <h4 className="font-weight-bold my-3">Title of the news</h4>
+                            <h4 className="font-weight-bold my-3">Insurgent: Divergent 3D (2014)</h4>
                             <p className="grey-text">
                             Temporibus autem quibusdam et aut officiis debitis aut rerum
                             necessitatibus saepe eveniet ut et voluptates repudiandae.
                             </p>
                             <MDBBtn color="indigo" size="sm">
-                            <MDBIcon far icon="clone" className="left" /> MDBView project
+                            <MDBIcon far icon="clone" className="left" /> View Here
                             </MDBBtn>
                         </MDBCardBody>
                         </MDBCol>

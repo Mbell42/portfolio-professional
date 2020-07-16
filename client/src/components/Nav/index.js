@@ -50,7 +50,7 @@ render() {
                             <span className="mr-2">Galleries</span>
                         </MDBDropdownToggle>
                         <MDBDropdownMenu>
-                            <MDBDropdownItem href="gallery_code">Code Gallery</MDBDropdownItem>
+                            <MDBDropdownItem href="gallery_code">Web Development Gallery</MDBDropdownItem>
                             <MDBDropdownItem href="gallery_vfx">VFX Gallery</MDBDropdownItem>
                         </MDBDropdownMenu>
                     </MDBDropdown>

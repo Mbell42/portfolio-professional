@@ -45,7 +45,12 @@ class Home extends React.Component {
                     <h4 className='text-uppercase mb-4 white-text '>
                         <strong>Web Design and VFX</strong>
                     </h4>
-                    <p>All the Lorems</p>
+                    <p>
+                      Full Stack Web Developer with a background in 3D Animation and VFX 
+                      with 4 years of experience in film and mobile video game production. 
+                      I learn new skills quickly, with the ability to pivot and take on new 
+                      challenges. I am seeking a transition into Web and Software Development.
+                    </p>
                     <MDBBtn outline color='white'>About Me</MDBBtn>
                     <MDBBtn outline color='white'>Contact Me</MDBBtn>
                     
