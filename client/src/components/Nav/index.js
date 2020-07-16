@@ -25,35 +25,40 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
-      <MDBNavbar color="indigo" dark expand="md">
-        <MDBNavbarBrand>
-            <MDBNavLink to="/"><strong className="white-text">MB</strong></MDBNavLink>
-        </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <MDBNavbarNav left>
-            <MDBNavItem active>
-              <MDBNavLink to="/">Home</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-                <MDBNavLink to="about">About</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="contact">Contact</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <span className="mr-2">Galleries</span>
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem href="gallery_code">Code Gallery</MDBDropdownItem>
-                  <MDBDropdownItem href="gallery_vfx">VFX Gallery</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavItem>
-          </MDBNavbarNav>
-          <MDBNavbarNav right>
+        <MDBNavbar color="secondary-color-dark" dark expand="md">
+            {/* Logo */}
+            <MDBNavbarBrand>
+                <MDBNavLink to="/"><strong className="white-text">MB</strong></MDBNavLink>
+            </MDBNavbarBrand>
+            <MDBNavbarToggler onClick={this.toggleCollapse} />
+            <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+            {/* Left side of NavBar */}
+            <MDBNavbarNav left>
+                <MDBNavItem active>
+                    <MDBNavLink to="/">Home</MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                    <MDBNavLink to="about">About</MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                    <MDBNavLink to="contact">Contact</MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                    {/* Dropdown for Gallery Links */}
+                    <MDBDropdown>
+                        <MDBDropdownToggle nav caret>
+                            <span className="mr-2">Galleries</span>
+                        </MDBDropdownToggle>
+                        <MDBDropdownMenu>
+                            <MDBDropdownItem href="gallery_code">Code Gallery</MDBDropdownItem>
+                            <MDBDropdownItem href="gallery_vfx">VFX Gallery</MDBDropdownItem>
+                        </MDBDropdownMenu>
+                    </MDBDropdown>
+                </MDBNavItem>
+            </MDBNavbarNav>
+
+          {/* Right side of NavBar */}
+          {/* <MDBNavbarNav right>
             <MDBNavItem>
               <MDBFormInline waves>
                 <div className="md-form my-0">
@@ -61,9 +66,12 @@ render() {
                 </div>
               </MDBFormInline>
             </MDBNavItem>
-          </MDBNavbarNav>
+          </MDBNavbarNav> */}
+
         </MDBCollapse>
       </MDBNavbar>
+
+      {/* Switch to control conditional routing */}
       <Switch>
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
