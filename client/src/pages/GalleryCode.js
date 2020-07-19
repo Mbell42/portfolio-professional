@@ -110,7 +110,7 @@ const GalleryVFX = () => {
                                 </MDBView>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-3">School Project 2 - Minute Page</h4>
-                                    <p className="grey-text">
+                                    <p className="white-text">
                                         This is the second group project for my class. My Team created a landing page 
                                         generator using NodeJs, Express, and MySQL.  Users can login, and quickly 
                                         create landing pages that are bound to their user account.

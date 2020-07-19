@@ -49,11 +49,6 @@ render() {
                 <MDBNavItem>
                     <MDBNavLink to="contact">Contact</MDBNavLink>
                 </MDBNavItem>
-
-                {/* Link to open pdf of Resume in new tab */}
-                <MDBNavItem>
-                  <a role="presentation" class="nav-link" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
-                </MDBNavItem>
                     
                 {/* Dropdown for Gallery Links */}
                 <MDBNavItem>
@@ -68,6 +63,11 @@ render() {
                     </MDBDropdown>
                 </MDBNavItem>
                 {/* End Dropdown for Gallery Links */}
+
+                {/* Link to open pdf of Resume in new tab */}
+                <MDBNavItem>
+                  <a role="presentation" class="nav-link" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
+                </MDBNavItem>
             </MDBNavbarNav>
             {/* End Links */}
 
