@@ -1,10 +1,10 @@
 //DEPENDENCIES
 import React from "react";
+    //components
 import { MDBContainer, MDBRow, MDBCol, MDBCardBody, MDBView, MDBMask } from "mdbreact";
-import '../App.js'
+    //styles
 import './css/pages.css';
-
-    //image imports
+    //images
 import antman from "../images/projects/vfx/antman.jpg"
 import poltergeist from "../images/projects/vfx/poltergeist.jpg"
 import theWalk from "../images/projects/vfx/theWalk.jpg"

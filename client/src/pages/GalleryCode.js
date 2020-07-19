@@ -1,10 +1,10 @@
 //DEPENDENCIES
 import React from "react";
+    //components
 import { MDBContainer, MDBRow, MDBCol, MDBCardBody, MDBView, MDBMask } from "mdbreact";
-import '../App.js'
+    //styles
 import './css/pages.css';
-
-    //image imports
+    //images
 import currencyApp from "../images/projects/code/currencyAppSquare.png";
 import dayScheduler from "../images/projects/code/day-scheduler-square.png";
 import employeeSummary from "../images/projects/code/employee-summary-square.png";

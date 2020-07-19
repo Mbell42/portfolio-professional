@@ -1,6 +1,6 @@
 //DEPENDENCIES
 import React from 'react';
-// import { BrowserRouter as Router } from 'react-router-dom';
+  //components
 import {
   MDBMask,
   MDBRow,
@@ -9,17 +9,27 @@ import {
   MDBView,
   MDBContainer
 } from 'mdbreact';
+// import '../App.js'
 
-import '../App.js'
+//styles
 import './css/pages.css';
-
-import mbSquare from "../images/portrait/mbSquare.jpg"
+  //images
+import mbSquare from "../images/portrait/mbSquare.jpg";
+import beachSunset from "../images/stock-free-images/joe-desousa/beach-sunset.jpg";
+import mountainPass from "../images/stock-free-images/guillaume-briard/mountain-pass.jpg";
+import mountainRangeDay from "../images/stock-free-images/jerry-zhang/mountain-range-day.jpg";
+import mountainRangeNight from "../images/stock-free-images/benjamin-voros/mountain-range-night.jpg";
 
 //PAGE
 const Home = () => {
     return (
       <div id='minimalistintro'>
-        <MDBView src='https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg'>
+        {/* Background image */}
+        {/* <MDBView src={beachSunset}> */}
+        {/* <MDBView src={mountainPass}> */}
+        {/* <MDBView src={mountainRangeDay}> */}
+        <MDBView src={mountainRangeNight}>
+
           <MDBMask className='rgba-black-light' />
           <MDBContainer className='homeContainer d-flex justify-content-center align-items-center'>
             <MDBRow>

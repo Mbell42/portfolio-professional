@@ -1,7 +1,8 @@
 //DEPENDENCIES
 import React from "react";
+    //components
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
-import '../App.js'
+    //styles
 import './css/pages.css';
 
 //PAGE

@@ -1,13 +1,11 @@
 //DEPENDENCIES
-//  React
 import React from "react";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-// Components
-// import Jumbotron from "./components/Jumbotron";
+  // Components
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
+  //styles
 import "./App.css";
 
   // App

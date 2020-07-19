@@ -1,6 +1,6 @@
 //DEPENDENCIES
 import React from 'react';
-// import { BrowserRouter as Router } from 'react-router-dom';
+  //components
 import {
   MDBMask,
   MDBRow,
@@ -9,13 +9,10 @@ import {
   MDBView,
   MDBContainer
 } from 'mdbreact';
-
-import '../App.js'
+  //styles
 import './css/pages.css';
-
-  //image imports
+  //images
 import mbSquare from "../images/portrait/mbSquare.jpg"
-
 
 //PAGE
 const About = () => {

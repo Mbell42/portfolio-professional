@@ -1,11 +1,15 @@
+//DEPENDENCIES
 import React from "react";
+  //components
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
+//COMPONENT
 const Footer = () => {
   return (
     <MDBFooter color="secondary-color-dark" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
+          {/* Contact Details */}
           <MDBCol md="6">
             <h5 className="title">Matthew Bell</h5>
             <p>
@@ -14,7 +18,9 @@ const Footer = () => {
               phone: 858-922-5440
             </p>
           </MDBCol>
+          {/* End Contact Details */}
           
+          {/* Links */}
           <MDBCol md="6">
             <h5 className="title text-center">Links</h5>
             <ul>
@@ -48,9 +54,11 @@ const Footer = () => {
               </li>
             </ul>
           </MDBCol>
+          {/* End Links */}
         </MDBRow>
       </MDBContainer>
       
+      {/* Copyright/Contact section */}
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
         <p className="text-center">

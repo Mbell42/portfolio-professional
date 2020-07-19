@@ -1,18 +1,22 @@
 //DEPENDENCIES
 import React, { Component } from "react";
+  //components
 import {
 MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse,
 MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
 } from "mdbreact";
+  //router
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-//  Pages
+  //Pages
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Contact from "../../pages/Contact";
 import GalleryCode from "../../pages/GalleryCode";
 import GalleryVFX from "../../pages/GalleryVFX";
+  //pdf
+import Resume from "../../pages/MattBell-Resume_2020-07-16.pdf";
 
+//COMPONENT
 class Nav extends Component {
 state = {
   isOpen: false
@@ -25,17 +29,19 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
+        {/* NavBar */}
         <MDBNavbar className="navbar fixed-top" color="secondary-color-dark" dark expand="md" scrolling>
             {/* Logo */}
             <MDBNavbarBrand>
                 <MDBNavLink to="/home"><strong className="white-text">MB</strong></MDBNavLink>
             </MDBNavbarBrand>
+            {/* End Logo */}
             <MDBNavbarToggler onClick={this.toggleCollapse} />
             <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-            {/* Left side of NavBar */}
+            {/* Links */}
             <MDBNavbarNav left>
-                <MDBNavItem active>
-                    <MDBNavLink to="/home">Home</MDBNavLink>
+                <MDBNavItem>
+                    <MDBNavLink to="home">Home</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
                     <MDBNavLink to="about">About</MDBNavLink>
@@ -43,8 +49,14 @@ render() {
                 <MDBNavItem>
                     <MDBNavLink to="contact">Contact</MDBNavLink>
                 </MDBNavItem>
+
+                {/* Link to open pdf of Resume in new tab */}
                 <MDBNavItem>
-                    {/* Dropdown for Gallery Links */}
+                  <a role="presentation" class="nav-link" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
+                </MDBNavItem>
+                    
+                {/* Dropdown for Gallery Links */}
+                <MDBNavItem>
                     <MDBDropdown>
                         <MDBDropdownToggle nav caret>
                             <span className="mr-2">Galleries</span>
@@ -55,7 +67,9 @@ render() {
                         </MDBDropdownMenu>
                     </MDBDropdown>
                 </MDBNavItem>
+                {/* End Dropdown for Gallery Links */}
             </MDBNavbarNav>
+            {/* End Links */}
 
           {/* Right side of NavBar */}
           {/* <MDBNavbarNav right>
@@ -67,9 +81,9 @@ render() {
               </MDBFormInline>
             </MDBNavItem>
           </MDBNavbarNav> */}
-
         </MDBCollapse>
       </MDBNavbar>
+      {/* End NavBar */}
 
       {/* Switch to control conditional routing */}
       <Switch>
