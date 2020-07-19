@@ -2,7 +2,7 @@
 import React from "react";
     //components
 import BgImage from "../components/BgImage";
-import { MDBContainer, MDBRow, MDBCol, MDBCardBody, MDBView, MDBMask } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardTitle, MDBCardImage, MDBCardBody, MDBCardText, MDBView, MDBMask } from "mdbreact";
     //styles
 import './css/pages.css';
     //images
@@ -23,29 +23,27 @@ const GalleryVFX = () => {
                         {/* Main column will contain about header, text, and calls to action */}
                         <MDBCol md='12' className='mb-4 white-text text-center'>
                     
-                            <h2 className="h1-responsive font-weight-bold my-5">
+                            <h1 className="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5">
                                 Web Develepment Gallery
-                            </h2>
+                            </h1>
+                            <hr className='hr-light my-4' />
                             <h5 className="white-text font-weight-bold w-responsive mx-auto mb-5">
                                 A collection of my past projects, including school projects.  Click the images to view the projects
                             </h5>
 
-                            <MDBRow className="text-center">
+                            <MDBRow className="text-center flex-row">
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/07_project-01" target="_blank" rel="noopener noreferrer">
-                                        <MDBView className="overlay rounded z-depth-1" waves>
-                                            <MDBMask overlay="white-slight" />
-                                            <img
-                                                src={currencyApp}
-                                                alt=""
-                                                className="img-fluid"
-                                            /> 
-                                        </MDBView>
+                                        <img
+                                            src={currencyApp}
+                                            alt="Currency App"
+                                            className="img-fluid rounded z-depth-2"
+                                        /> 
                                     </a>
                                     
                                     <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-3">CurrencyExchangePro</h4>
-                                        <p className="white-text">
+                                        <h4 className="font-weight-bold my-2">School Project 1 - CurrencyExchangePro</h4>
+                                        <p className="white-text mb-5">
                                             This is my first group project for class.  My team built a 
                                             currency-app that can convert any currency into another 
                                             currency, store/display your search history, and send a 
@@ -56,18 +54,15 @@ const GalleryVFX = () => {
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/06_weather-dashboard" target={"blank"}>
-                                        <MDBView className="overlay rounded z-depth-1" waves>
-                                            <MDBMask overlay="white-slight" />
-                                            <img
-                                                src={weatherDashboard}
-                                                alt=""
-                                                className="img-fluid"
-                                            />
-                                        </MDBView>
+                                        <img
+                                            src={weatherDashboard}
+                                            alt="Weather Dashboard"
+                                            className="img-fluid rounded z-depth-2"
+                                        /> 
                                     </a>
-                                    <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-3">Weather Dashboard</h4>
-                                        <p className="white-text">
+                                    <MDBCardBody className="pb-0 mb-3">
+                                        <h4 className="font-weight-bold my-2">Weather<br />Dashboard</h4>
+                                        <p className="white-text mb-5">
                                             This is my sixth homework project.  I made a weather dashboard 
                                             that will display current and forecast weather data using API 
                                             requests.  The current weather data is displayed in the top right, 
@@ -78,20 +73,15 @@ const GalleryVFX = () => {
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/05_work-day-scheduler" target={"blank"}>
-                                        <MDBView className="overlay rounded z-depth-1" waves>
-                                            <MDBMask overlay="white-slight" />
-                                            <img
-                                                src={dayScheduler}
-                                                alt=""
-                                                className="img-fluid"
-                                            />
-                                        
-                                        
-                                        </MDBView>
+                                        <img
+                                            src={dayScheduler}
+                                            alt="Day Scheduler"
+                                            className="img-fluid rounded z-depth-2"
+                                        />
                                     </a>
-                                    <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-3">Work Day Scheduler</h4>
-                                        <p className="white-text">
+                                    <MDBCardBody className="pb-0 mb-3">
+                                        <h4 className="font-weight-bold my-2">Work Day<br />Scheduler</h4>
+                                        <p className="white-text mb-5">
                                             This is my fifth homework project. I Created a simple calendar 
                                             application that allows the user to save events for each hour 
                                             of the day. This app will run in the browser and feature dynamically 
@@ -102,18 +92,15 @@ const GalleryVFX = () => {
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/project2" target={"blank"}>
-                                        <MDBView className="overlay rounded z-depth-1" waves>
-                                            <MDBMask overlay="white-slight" />
-                                            <img
-                                                src={minutePage}
-                                                alt=""
-                                                className="img-fluid"
-                                            />
-                                        </MDBView>
+                                        <img
+                                            src={minutePage}
+                                            alt="Minute Page"
+                                            className="img-fluid rounded z-depth-2"
+                                        />
                                     </a>
-                                    <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-3">School Project 2 - Minute Page</h4>
-                                        <p className="white-text">
+                                    <MDBCardBody className="pb-0 mb-3">
+                                        <h4 className="font-weight-bold my-2">School Project 2 - Minute Page</h4>
+                                        <p className="white-text mb-5">
                                             This is the second group project for my class. My Team created a landing page 
                                             generator using NodeJs, Express, and MySQL.  Users can login, and quickly 
                                             create landing pages that are bound to their user account.
@@ -123,18 +110,15 @@ const GalleryVFX = () => {
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/generator-pw-random" target={"blank"}>
-                                        <MDBView className="overlay rounded z-depth-1" waves>
-                                            <MDBMask overlay="white-slight" />
-                                            <img
-                                                src={randomPwGen}
-                                                alt=""
-                                                className="img-fluid"
-                                            />                                            
-                                        </MDBView>
+                                        <img
+                                            src={randomPwGen}
+                                            alt="Random Password Generator"
+                                            className="img-fluid rounded z-depth-2"
+                                        />
                                     </a>
-                                    <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-3">Random Password Generator</h4>
-                                        <p className="white-text">
+                                    <MDBCardBody className="pb-0 mb-3">
+                                        <h4 className="font-weight-bold my-2">Random Password Generator</h4>
+                                        <p className="white-text mb-5">
                                             This is my third homework project. I Created a simple random password generator 
                                             that allows the user to save the created password to their clipboard.
                                         </p>
@@ -143,18 +127,15 @@ const GalleryVFX = () => {
                                     
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/10_TemplateEngine-EmployeeSummary" target={"blank"}>
-                                        <MDBView className="overlay rounded z-depth-1" waves>
-                                            <MDBMask overlay="white-slight" />
-                                            <img
-                                                src={employeeSummary}
-                                                alt=""
-                                                className="img-fluid"
-                                            />                         
-                                        </MDBView>
+                                        <img
+                                            src={employeeSummary}
+                                            alt="Emplyee Summary"
+                                            className="img-fluid rounded z-depth-2"
+                                        /> 
                                     </a>
-                                    <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-3">TemplateEngine-EmployeeSummary</h4>
-                                        <p className="white-text">
+                                    <MDBCardBody className="pb-0 mb-3">
+                                        <h4 className="font-weight-bold my-2">TemplateEngine-EmployeeSummary</h4>
+                                        <p className="white-text mb-5">
                                             This is my tenth homework project.  I Created a a Node CLI that takes 
                                             in information about employees and generates an HTML webpage that 
                                             displays summaries for each person.

@@ -25,7 +25,7 @@ const About = () => {
             <MDBRow>
               {/* Main column will contain about header, text, and calls to action */}
               <MDBCol md='12' className='mb-4 white-text text-center'>
-                <h1 className='h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5'>
+                <h1 className="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5">
                     About Me
                 </h1>
                 <hr className='hr-light my-4' />
