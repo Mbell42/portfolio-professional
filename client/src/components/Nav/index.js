@@ -7,8 +7,8 @@ MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 //  Pages
-import Home from "../../pages/home";
-import About from "../../pages/about";
+import Home from "../../pages/Home";
+import About from "../../pages/About";
 import Contact from "../../pages/Contact";
 import GalleryCode from "../../pages/GalleryCode";
 import GalleryVFX from "../../pages/GalleryVFX";
