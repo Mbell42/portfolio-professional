@@ -9,7 +9,7 @@ import './css/pages.css';
 const Contact = () => {
 
         return (
-            <MDBContainer className="contactContainer">
+            <MDBContainer className="mainContainer">
                 <section className="my-5">
                     <h2 className="h1-responsive font-weight-bold text-center my-5">
                     Contact me

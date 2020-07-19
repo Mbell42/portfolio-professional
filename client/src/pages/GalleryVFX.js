@@ -13,7 +13,7 @@ import insurgent from "../images/projects/vfx/insurgent.jpg"
 //PAGE
 const GalleryVFX = () => {
         return (
-            <MDBContainer className="galleryVFXContainer">
+            <MDBContainer className="mainContainer">
                 <section className="text-center my-5">
                     <h2 className="h1-responsive font-weight-bold my-5">
                         VFX Gallery

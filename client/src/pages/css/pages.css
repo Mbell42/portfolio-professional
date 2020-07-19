@@ -1,35 +1,25 @@
-/* Individual page styles are seperated for customs tyling later on */
+/* Shared styles */
+.mainContainer{
+    height: 100%;
+    padding-top: 17rem
+}
 
 /* Home Page Styles */
-#minimalistintro .view {
+#homeIntro .view {
     min-height: 100vh !important;
     height: unset !important;
 }
-.homeContainer{
-    height: 100%;
-    padding-top: 17rem
-}
 
-/* About Page Styles */
-.aboutContainer{
-    height: 100%;
-    padding-top: 17rem
-}
+
+/* About Page Styles
+
 
 /* Contact Page Styles */
-.contactContainer{
-    height: 100%;
-    padding-top: 17rem
-}
+
 
 /* GalleryCode Page Styles */
-.galleryCodeContainer{
-    height: 100%;
-    padding-top: 17rem
-}
+
 
 /* GalleryVFX Page Styles */
-.galleryVFXContainer{
-    height: 100%;
-    padding-top: 17rem
-}
+
+

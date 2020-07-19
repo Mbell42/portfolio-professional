@@ -15,7 +15,7 @@ import randomPwGen from "../images/projects/code/randomPwGen-square.png";
 //PAGE
 const GalleryVFX = () => {
         return (
-            <MDBContainer className="galleryCodeContainer">
+            <MDBContainer className="mainContainer">
                 <section className="text-center my-5">
                     <h2 className="h1-responsive font-weight-bold my-5">
                         Web Develepment Gallery

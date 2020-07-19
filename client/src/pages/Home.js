@@ -23,7 +23,7 @@ import mountainRangeNight from "../images/stock-free-images/benjamin-voros/mount
 //PAGE
 const Home = () => {
     return (
-      <div id='minimalistintro'>
+      <div id='homeIntro'>
         {/* Background image */}
         {/* <MDBView src={beachSunset}> */}
         {/* <MDBView src={mountainPass}> */}
@@ -31,7 +31,7 @@ const Home = () => {
         <MDBView src={mountainRangeNight}>
 
           <MDBMask className='rgba-black-light' />
-          <MDBContainer className='homeContainer d-flex justify-content-center align-items-center'>
+          <MDBContainer className='mainContainer d-flex justify-content-center align-items-center'>
             <MDBRow>
                 {/* Left column will contain intro header, text, and call to action */}
                 <MDBCol md='8' className='mb-4 white-text text-center'>
@@ -48,8 +48,8 @@ const Home = () => {
                       I learn new skills quickly, with the ability to pivot and take on new 
                       challenges. I am seeking a transition into Web and Software Development.
                     </p>
-                    <MDBBtn outline color='white'><a href="/about">Read More</a></MDBBtn>
-                    <MDBBtn outline color='white'><a href="/contact">Contact Me</a></MDBBtn>
+                    <MDBBtn outline color="secondary"><a href="/about">Read More</a></MDBBtn>
+                    <MDBBtn outline color="secondary"><a href="/contact">Contact Me</a></MDBBtn>
                     
                 </MDBCol>
                 {/* Right Column will contain image */}
