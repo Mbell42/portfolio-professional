@@ -28,10 +28,10 @@ const Contact = () => {
                                     Contact me
                                 </h1>
                                 <hr className='hr-light my-4' />
-                                <p className="text-center font-weight-bold white-text w-responsive mx-auto pb-5">
+                                <h5 className="text-center font-weight-bold white-text w-responsive mx-auto pb-5">
                                     If you have any questions, or would like to collaborate on a project,
                                     please let me know!
-                                </p>
+                                </h5>
                                 <MDBRow>
                                     <MDBCol lg="5" className="lg-0 mb-4">
                                         <MDBCard>
