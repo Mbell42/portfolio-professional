@@ -1,7 +1,10 @@
 {
-  "name": "mern",
+  "name": "mb-portfolio",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Matthew bell's professional portfolio using NodeJS, React, and MDBReact.",
+  "engines": {
+    "node": "12.13.1"
+  },
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
