@@ -1,31 +1,17 @@
 //DEPENDENCIES
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput, MDBView, MDBMask } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCardBody, MDBView, MDBMask } from "mdbreact";
 import '../App.js'
 import './css/pages.css';
 
+    //image imports
 import antman from "../images/projects/vfx/antman.jpg"
 import poltergeist from "../images/projects/vfx/poltergeist.jpg"
 import theWalk from "../images/projects/vfx/theWalk.jpg"
 import insurgent from "../images/projects/vfx/insurgent.jpg"
 
 //PAGE
-class GalleryVFX extends React.Component {
-    state = {
-        collapsed: false
-    };
-
-    handleTogglerClick = () => {
-        const { collapsed } = this.state;
-
-        this.setState({
-        collapsed: !collapsed
-        });
-    };
-
-    render() {
-        const { collapsed } = this.state;
-
+const GalleryVFX = () => {
         return (
             <MDBContainer className="galleryVFXContainer">
                 <section className="text-center my-5">
@@ -119,6 +105,5 @@ class GalleryVFX extends React.Component {
             </MDBContainer>
         );
     }
-}
 
 export default GalleryVFX;

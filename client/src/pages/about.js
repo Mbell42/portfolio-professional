@@ -13,25 +13,12 @@ import {
 import '../App.js'
 import './css/pages.css';
 
+  //image imports
 import mbSquare from "../images/portrait/mbSquare.jpg"
 
 
 //PAGE
-class About extends React.Component {
-  state = {
-    collapsed: false
-  };
-
-  handleTogglerClick = () => {
-    const { collapsed } = this.state;
-
-    this.setState({
-      collapsed: !collapsed
-    });
-  };
-
-  render() {
-    const { collapsed } = this.state;
+const About = () => {
 
     return (
       <div id='minimalistintro'>
@@ -81,6 +68,5 @@ class About extends React.Component {
       </div>
     );
   }
-}
 
 export default About;

@@ -5,21 +5,7 @@ import '../App.js'
 import './css/pages.css';
 
 //PAGE
-class Contact extends React.Component {
-    state = {
-      collapsed: false
-    };
-  
-    handleTogglerClick = () => {
-      const { collapsed } = this.state;
-  
-      this.setState({
-        collapsed: !collapsed
-      });
-    };
-  
-    render() {
-        const { collapsed } = this.state;
+const Contact = () => {
 
         return (
             <MDBContainer className="contactContainer">
@@ -131,6 +117,5 @@ class Contact extends React.Component {
             </MDBContainer>
         );
     }   
-}
 
 export default Contact;

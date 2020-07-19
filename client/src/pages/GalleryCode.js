@@ -1,9 +1,10 @@
 //DEPENDENCIES
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput, MDBView, MDBMask } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCardBody, MDBView, MDBMask } from "mdbreact";
 import '../App.js'
 import './css/pages.css';
 
+    //image imports
 import currencyApp from "../images/projects/code/currencyAppSquare.png";
 import dayScheduler from "../images/projects/code/day-scheduler-square.png";
 import employeeSummary from "../images/projects/code/employee-summary-square.png";
@@ -12,22 +13,7 @@ import weatherDashboard from "../images/projects/code/weather-dashboard-square.p
 import randomPwGen from "../images/projects/code/randomPwGen-square.png";
 
 //PAGE
-class GalleryVFX extends React.Component {
-    state = {
-        collapsed: false
-    };
-
-    handleTogglerClick = () => {
-        const { collapsed } = this.state;
-
-        this.setState({
-        collapsed: !collapsed
-        });
-    };
-
-    render() {
-        const { collapsed } = this.state;
-
+const GalleryVFX = () => {
         return (
             <MDBContainer className="galleryCodeContainer">
                 <section className="text-center my-5">
@@ -171,6 +157,5 @@ class GalleryVFX extends React.Component {
             </MDBContainer>
         );
     }
-}
 
 export default GalleryVFX;

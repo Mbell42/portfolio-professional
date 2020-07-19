@@ -16,22 +16,7 @@ import './css/pages.css';
 import mbSquare from "../images/portrait/mbSquare.jpg"
 
 //PAGE
-class Home extends React.Component {
-  state = {
-    collapsed: false
-  };
-
-  handleTogglerClick = () => {
-    const { collapsed } = this.state;
-
-    this.setState({
-      collapsed: !collapsed
-    });
-  };
-
-  render() {
-    const { collapsed } = this.state;
-
+const Home = () => {
     return (
       <div id='minimalistintro'>
         <MDBView src='https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg'>
@@ -68,6 +53,5 @@ class Home extends React.Component {
       </div>
     );
   }
-}
 
 export default Home;
