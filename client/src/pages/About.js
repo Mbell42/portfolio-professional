@@ -1,6 +1,7 @@
 //DEPENDENCIES
 import React from 'react';
   //components
+import BgImage from "../components/BgImage";
 import {
   MDBMask,
   MDBRow,
@@ -18,14 +19,13 @@ import mbSquare from "../images/portrait/mbSquare.jpg"
 const About = () => {
 
     return (
-      <div id='minimalistintro'>
-        <MDBView src='https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg'>
-          <MDBMask className='rgba-black-light' />
+      <div className='pageContainer'>
+        <BgImage>
           <MDBContainer className='mainContainer d-flex justify-content-center align-items-center'>
             <MDBRow>
               {/* Main column will contain about header, text, and calls to action */}
               <MDBCol md='12' className='mb-4 white-text text-center'>
-                <h1 className='h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 '>
+                <h1 className='h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5'>
                     About Me
                 </h1>
                 <hr className='hr-light my-4' />
@@ -61,7 +61,7 @@ const About = () => {
                   
             </MDBRow>
           </MDBContainer>
-        </MDBView>
+        </BgImage>
       </div>
     );
   }

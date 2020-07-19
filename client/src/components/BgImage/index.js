@@ -1,5 +1,5 @@
 //DEPENDENCIES
-import React, { Component } from "react";
+import React from "react";
   //components
 import { MDBMask, MDBView, } from 'mdbreact';
 
@@ -11,15 +11,16 @@ import mountainRangeDay from "../../images/stock-free-images/jerry-zhang/mountai
 import mountainRangeNight from "../../images/stock-free-images/benjamin-voros/mountain-range-night.jpg";
 
 //COMPONENT
-const BgImage = () => {
+const BgImage = (props) => {
       return (
           <div>
             {/* Background image */}
             {/* <MDBView src={beachSunset}> */}
             {/* <MDBView src={mountainPass}> */}
-            {/* <MDBView src={mountainRangeDay}> */}
-            <MDBView src={mountainRangeNight}>
+            <MDBView src={mountainRangeDay}>
+            {/* <MDBView src={mountainRangeNight}> */}
                 <MDBMask className='rgba-black-light' />
+                {props.children}
             </MDBView>
             </div>
         );

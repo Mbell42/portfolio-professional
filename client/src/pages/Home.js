@@ -1,12 +1,11 @@
 //DEPENDENCIES
 import React from 'react';
   //components
+import BgImage from "../components/BgImage";
 import {
-  MDBMask,
   MDBRow,
   MDBCol,
   MDBBtn,
-  MDBView,
   MDBContainer
 } from 'mdbreact';
 // import '../App.js'
@@ -15,22 +14,12 @@ import {
 import './css/pages.css';
   //images
 import mbSquare from "../images/portrait/mbSquare.jpg";
-import beachSunset from "../images/stock-free-images/joe-desousa/beach-sunset.jpg";
-import mountainPass from "../images/stock-free-images/guillaume-briard/mountain-pass.jpg";
-import mountainRangeDay from "../images/stock-free-images/jerry-zhang/mountain-range-day.jpg";
-import mountainRangeNight from "../images/stock-free-images/benjamin-voros/mountain-range-night.jpg";
 
 //PAGE
 const Home = () => {
     return (
-      <div id='homeIntro'>
-        {/* Background image */}
-        {/* <MDBView src={beachSunset}> */}
-        {/* <MDBView src={mountainPass}> */}
-        {/* <MDBView src={mountainRangeDay}> */}
-        <MDBView src={mountainRangeNight}>
-
-          <MDBMask className='rgba-black-light' />
+      <div className='pageContainer'>
+        <BgImage>
           <MDBContainer className='mainContainer d-flex justify-content-center align-items-center'>
             <MDBRow>
                 {/* Left column will contain intro header, text, and call to action */}
@@ -59,7 +48,7 @@ const Home = () => {
                 </MDBCol>
             </MDBRow>
           </MDBContainer>
-        </MDBView>
+          </BgImage>
       </div>
     );
   }

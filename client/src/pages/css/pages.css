@@ -5,7 +5,7 @@
 }
 
 /* Home Page Styles */
-#homeIntro .view {
+.pageContainer .view {
     min-height: 100vh !important;
     height: unset !important;
 }

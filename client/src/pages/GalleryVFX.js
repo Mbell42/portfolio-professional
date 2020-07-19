@@ -1,6 +1,7 @@
 //DEPENDENCIES
 import React from "react";
     //components
+import BgImage from "../components/BgImage";
 import { MDBContainer, MDBRow, MDBCol, MDBCardBody, MDBView, MDBMask } from "mdbreact";
     //styles
 import './css/pages.css';
@@ -13,6 +14,8 @@ import insurgent from "../images/projects/vfx/insurgent.jpg"
 //PAGE
 const GalleryVFX = () => {
         return (
+            <div className='pageContainer'>
+            <BgImage>
             <MDBContainer className="mainContainer">
                 <section className="text-center my-5">
                     <h2 className="h1-responsive font-weight-bold my-5">
@@ -103,6 +106,8 @@ const GalleryVFX = () => {
                     </MDBRow>
                 </section>
             </MDBContainer>
+            </BgImage>
+            </div>
         );
     }
 
