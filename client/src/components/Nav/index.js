@@ -10,8 +10,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from "../../pages/home";
 import About from "../../pages/about";
 import Contact from "../../pages/Contact";
-import GalleryCode from "../../pages/galleryCode";
-import GalleryVFX from "../../pages/galleryVFX";
+import GalleryCode from "../../pages/GalleryCode";
+import GalleryVFX from "../../pages/GalleryVFX";
 
 class Nav extends Component {
 state = {
