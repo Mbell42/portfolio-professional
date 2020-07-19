@@ -19,28 +19,28 @@ const Footer = () => {
             <h5 className="title text-center">Links</h5>
             <ul>
               <li className="list-unstyled">
-              <a href="https://github.com/Mbell42" target="_blank">
+              <a href="https://github.com/Mbell42" target="_blank" rel="noopener noreferrer">
                   <p className="text-center">
                       Github
                   </p>
                 </a>
               </li>
               <li className="list-unstyled">
-                <a href="https://www.linkedin.com/in/matthew-bell-developer-artist/" target="_blank">
+                <a href="https://www.linkedin.com/in/matthew-bell-developer-artist/" target="_blank" rel="noopener noreferrer">
                   <p className="text-center">
                       LinkedIn
                   </p>
                 </a>
               </li>
               <li className="list-unstyled">
-                <a href="https://vimeo.com/matthewgbell" target="_blank">
+                <a href="https://vimeo.com/matthewgbell" target="_blank" rel="noopener noreferrer">
                   <p className="text-center">
                       Vimeo
                   </p>
                 </a>
               </li>
               <li className="list-unstyled">
-                <a href="https://www.imdb.com/name/nm7347199/?ref_=rvi_nm" target="_blank">
+                <a href="https://www.imdb.com/name/nm7347199/?ref_=rvi_nm" target="_blank" rel="noopener noreferrer">
                   <p className="text-center">
                       IMDB
                   </p>
