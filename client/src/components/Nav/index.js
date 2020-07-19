@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //  Pages
 import Home from "../../pages/home";
 import About from "../../pages/about";
-import Contact from "../../pages/contact";
+import Contact from "../../pages/Contact";
 import GalleryCode from "../../pages/galleryCode";
 import GalleryVFX from "../../pages/galleryVFX";
 
