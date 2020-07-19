@@ -30,16 +30,16 @@ const GalleryVFX = () => {
                         <MDBRow className="text-center">
                             <MDBCol lg="3"></MDBCol>
                             <MDBCol lg="6" md="12" className="mb-lg-0 mb-4">
-                                <MDBView className="overlay rounded z-depth-1" waves>
-                                    <img
-                                    src={antman}
-                                    alt=""
-                                    className="img-fluid"
-                                    />
-                                    <a href="https://www.imdb.com/title/tt0478970/">
+                                <a href="https://www.imdb.com/title/tt0478970/">     
+                                    <MDBView className="overlay rounded z-depth-1" waves>
                                         <MDBMask overlay="white-slight" />
-                                    </a>
-                                </MDBView>
+                                        <img
+                                            src={antman}
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                    </MDBView>
+                                </a>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-3">Antman (2015)</h4>
                                     <p className="white-text">
@@ -50,16 +50,16 @@ const GalleryVFX = () => {
                             <MDBCol lg="3"></MDBCol>
 
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <MDBView className="overlay rounded z-depth-1" waves>
-                                    <img
-                                    src={poltergeist}
-                                    alt=""
-                                    className="img-fluid"
-                                    />
-                                    <a href="https://www.imdb.com/title/tt1029360/">
+                                <a href="https://www.imdb.com/title/tt1029360/">
+                                    <MDBView className="overlay rounded z-depth-1" waves>
                                         <MDBMask overlay="white-slight" />
-                                    </a>
-                                </MDBView>
+                                        <img
+                                            src={poltergeist}
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                    </MDBView>
+                                </a>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-3">Poltergeist (2016)</h4>
                                     <p className="white-text">
@@ -69,16 +69,16 @@ const GalleryVFX = () => {
                             </MDBCol>
 
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <MDBView className="overlay rounded z-depth-1" waves>
-                                    <img
-                                    src={insurgent}
-                                    alt=""
-                                    className="img-fluid"
-                                    />
-                                    <a href="https://www.imdb.com/title/tt2908446/">
+                                <a href="https://www.imdb.com/title/tt2908446/">
+                                    <MDBView className="overlay rounded z-depth-1" waves>
                                         <MDBMask overlay="white-slight" />
-                                    </a>
-                                </MDBView>
+                                        <img
+                                            src={insurgent}
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                    </MDBView>
+                                </a>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-3">Divergent Series: Insurgent (2015)</h4>
                                     <p className="white-text">
@@ -88,16 +88,16 @@ const GalleryVFX = () => {
                             </MDBCol>
 
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <MDBView className="overlay rounded z-depth-1" waves>
-                                    <img
-                                    src={theWalk}
-                                    alt=""
-                                    className="img-fluid"
-                                    />
-                                    <a href="https://www.imdb.com/title/tt3488710/">
+                                <a href="https://www.imdb.com/title/tt3488710/"> 
+                                    <MDBView className="overlay rounded z-depth-1" waves>
                                         <MDBMask overlay="white-slight" />
-                                    </a>
-                                </MDBView>
+                                        <img
+                                            src={theWalk}
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                    </MDBView>
+                                </a>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-3">The Walk (2015)</h4>
                                     <p className="white-text">

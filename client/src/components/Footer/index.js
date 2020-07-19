@@ -12,6 +12,8 @@ const Footer = () => {
           {/* Contact Details */}
           <MDBCol md="6">
             <h5 className="title">Matthew Bell</h5>
+            <hr className='hr-grey my-4' />
+
             <p>
               email: matthewbell1030@gmail.com
               <br />
@@ -22,32 +24,34 @@ const Footer = () => {
           
           {/* Links */}
           <MDBCol md="6">
-            <h5 className="title text-center">Links</h5>
-            <ul>
+            <h5 className="title">Links</h5>
+            <hr className='hr-grey my-4' />
+
+            <ul className="pl-0">
               <li className="list-unstyled">
               <a href="https://github.com/Mbell42" target="_blank" rel="noopener noreferrer">
-                  <p className="text-center">
+                  <p>
                       Github
                   </p>
                 </a>
               </li>
               <li className="list-unstyled">
                 <a href="https://www.linkedin.com/in/matthew-bell-developer-artist/" target="_blank" rel="noopener noreferrer">
-                  <p className="text-center">
+                  <p>
                       LinkedIn
                   </p>
                 </a>
               </li>
               <li className="list-unstyled">
                 <a href="https://vimeo.com/matthewgbell" target="_blank" rel="noopener noreferrer">
-                  <p className="text-center">
+                  <p>
                       Vimeo
                   </p>
                 </a>
               </li>
               <li className="list-unstyled">
                 <a href="https://www.imdb.com/name/nm7347199/?ref_=rvi_nm" target="_blank" rel="noopener noreferrer">
-                  <p className="text-center">
+                  <p>
                       IMDB
                   </p>
                 </a>

@@ -66,7 +66,7 @@ render() {
 
                 {/* Link to open pdf of Resume in new tab */}
                 <MDBNavItem>
-                  <a role="presentation" class="nav-link" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
+                  <a role="presentation" className="nav-link" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
                 </MDBNavItem>
             </MDBNavbarNav>
             {/* End Links */}

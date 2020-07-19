@@ -3,12 +3,12 @@
     height: 100%;
     padding-top: 17rem
 }
-
-/* Home Page Styles */
 .pageContainer .view {
     min-height: 100vh !important;
     height: unset !important;
 }
+
+/* Home Page Styles */
 
 
 /* About Page Styles
