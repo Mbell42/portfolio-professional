@@ -42,7 +42,7 @@ const Contact = () => {
                                                 </h3>
                                                 </div>
                                                 <p className="font-small dark-grey-text">
-                                                    I will return your message as soon as possible
+                                                    I will return your message as soon as possible.
                                                 </p>
                                                 <div className="md-form">
                                                 <MDBInput
@@ -107,21 +107,21 @@ const Contact = () => {
                                             <MDBBtn tag="a" color="indigo" className="accent-1">
                                             <MDBIcon icon="map-marker-alt" />
                                             </MDBBtn>
-                                            <p className="white-text">La Mesa, 91942</p>
-                                            <p className="mb-md-0 white-text">United States</p>
+                                            <p className="white-text"><small>La Mesa, 91942</small></p>
+                                            <p className="mb-md-0 white-text"><small>United States</small></p>
                                         </MDBCol>
                                         <MDBCol md="4">
                                             <MDBBtn tag="a" color="indigo" className="accent-1">
                                             <MDBIcon icon="phone" />
                                             </MDBBtn>
-                                            <p className="white-text">+ 01 858 922 5440</p>
-                                            <p className="mb-md-0  white-text">Mon - Fri, 8:00-20:00</p>
+                                            <p className="white-text"><small>+ 01 858 922 5440</small></p>
+                                            <p className="mb-md-0  white-text"><small>Mon - Fri, 8:00-20:00</small></p>
                                         </MDBCol>
                                         <MDBCol md="4">
                                             <MDBBtn tag="a" color="indigo" className="accent-1">
                                             <MDBIcon icon="envelope" />
                                             </MDBBtn>
-                                            <p className="white-text">matthewbell1030@gmail.com</p>
+                                            <p className="white-text"><small>matthewbell1030@gmail.com</small></p>
                                             
                                         </MDBCol>
                                         </MDBRow>
