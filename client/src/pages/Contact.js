@@ -23,7 +23,8 @@ const Contact = () => {
                     <MDBContainer className="mainContainer d-flex justify-content-center align-items-center">
                         <MDBRow>
                             {/* Main column will contain about header, text, and calls to action */}
-                            <MDBCol md='12' className='mb-4 white-text text-center'>
+                            {/* Header */}
+                            <MDBCol md='12' className='mb-4 white-text '>
                                 <h1 className="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5">
                                     Contact me
                                 </h1>
@@ -33,59 +34,61 @@ const Contact = () => {
                                     please let me know!
                                 </h5>
                                 <MDBRow>
+                                    {/* Form Section */}
                                     <MDBCol lg="5" className="lg-0 mb-4">
                                         <MDBCard>
                                             <MDBCardBody>
-                                                <div className="form-header indigo accent-1">
-                                                <h3 className="mt-2">
-                                                    <MDBIcon icon="envelope" /> Send me a message:
-                                                </h3>
+                                                <div className="text-center form-header indigo accent-1">
+                                                    <h3 className="mt-2">
+                                                        <MDBIcon icon="envelope" /> Send me a message:
+                                                    </h3>
                                                 </div>
-                                                <p className="font-small dark-grey-text">
+                                                <p className="text-center font-small dark-grey-text">
                                                     I will return your message as soon as possible.
                                                 </p>
                                                 <div className="md-form">
-                                                <MDBInput
-                                                    icon="user"
-                                                    label="Your name"
-                                                    iconClass="grey-text"
-                                                    type="text"
-                                                    id="form-name"
-                                                />
+                                                    <MDBInput
+                                                        icon="user"
+                                                        label="Your name"
+                                                        iconClass="grey-text"
+                                                        type="text"
+                                                        id="form-name"
+                                                    />
                                                 </div>
                                                 <div className="md-form">
-                                                <MDBInput
-                                                    icon="envelope"
-                                                    label="Your email"
-                                                    iconClass="grey-text"
-                                                    type="text"
-                                                    id="form-email"
-                                                />
+                                                    <MDBInput
+                                                        icon="envelope"
+                                                        label="Your email"
+                                                        iconClass="grey-text"
+                                                        type="text"
+                                                        id="form-email"
+                                                    />
                                                 </div>
                                                 <div className="md-form">
-                                                <MDBInput
-                                                    icon="tag"
-                                                    label="Subject"
-                                                    iconClass="grey-text"
-                                                    type="text"
-                                                    id="form-subject"
-                                                />
+                                                    <MDBInput
+                                                        icon="tag"
+                                                        label="Subject"
+                                                        iconClass="grey-text"
+                                                        type="text"
+                                                        id="form-subject"
+                                                    />
                                                 </div>
                                                 <div className="md-form">
-                                                <MDBInput
-                                                    icon="pencil-alt"
-                                                    label="Message"
-                                                    iconClass="grey-text"
-                                                    type="textarea"
-                                                    id="form-text"
-                                                />
+                                                    <MDBInput
+                                                        icon="pencil-alt"
+                                                        label="Message"
+                                                        iconClass="grey-text"
+                                                        type="textarea"
+                                                        id="form-text"
+                                                    />
                                                 </div>
                                                 <div className="text-center">
-                                                <MDBBtn color="indigo">Submit</MDBBtn>
+                                                    <MDBBtn color="indigo">Submit</MDBBtn>
                                                 </div>
                                             </MDBCardBody>
                                         </MDBCard>
                                     </MDBCol>
+                                    {/* Map Section */}
                                     <MDBCol lg="7">
                                         <div
                                         id="map-container"
@@ -102,6 +105,7 @@ const Contact = () => {
                                         />
                                         </div>
                                         <br />
+                                        {/* Location Details */}
                                         <MDBRow className="text-center">
                                         <MDBCol md="4">
                                             <MDBBtn tag="a" color="indigo" className="accent-1">
