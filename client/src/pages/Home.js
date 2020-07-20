@@ -37,14 +37,14 @@ const Home = () => {
                       I learn new skills quickly, with the ability to pivot and take on new 
                       challenges. I am seeking a transition into Web and Software Development.
                     </p>
-                    <MDBBtn outline color="secondary"><a href="/about">Read More</a></MDBBtn>
-                    <MDBBtn outline color="secondary"><a href="/contact">Contact Me</a></MDBBtn>
+                    <MDBBtn gradient="peach"><a href="/about" className="white-text">Read More</a></MDBBtn>
+                    <MDBBtn gradient="purple"><a href="/contact" className="white-text">Contact Me</a></MDBBtn>
                     
                 </MDBCol>
                 {/* Right Column will contain image */}
                 <MDBCol md='4' className='mb-4'>
                     {/* <h5 className="white-text text-center">Image Here</h5> */}
-                    <img src={mbSquare} alt="Matthew Bell" className="img-fluid" height="350px" />
+                    <img src={mbSquare} alt="Matthew Bell" className="img-fluid rounded" />
                 </MDBCol>
             </MDBRow>
           </MDBContainer>

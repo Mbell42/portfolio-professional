@@ -49,14 +49,14 @@ const About = () => {
                 </MDBCol>
 
                 <MDBCol md='4' className='float-right'>
-                  <img src={mbSquare} alt="Matthew Bell" className="img-fluid" />
+                  <img src={mbSquare} alt="Matthew Bell" className="img-fluid rounded-circle" />
                 </MDBCol>
               </MDBCol>
 
               <MDBCol md='12' className='mb-4 white-text text-center'>
-                <MDBBtn outline color='white'><a href="/contact">Contact Me</a></MDBBtn>
-                <MDBBtn outline color='white'><a href="/gallery_code">Web Development Gallery</a></MDBBtn>
-                <MDBBtn outline color='white'><a href="/gallery_vfx">VFX Gallery</a></MDBBtn>
+                <MDBBtn gradient="purple"><a href="/contact" className="white-text">Contact Me</a></MDBBtn>
+                <MDBBtn gradient="peach"><a href="/gallery_code" className="white-text">Web Development Gallery</a></MDBBtn>
+                <MDBBtn gradient="peach"><a href="/gallery_vfx" className="white-text">VFX Gallery</a></MDBBtn>
               </MDBCol>
                   
             </MDBRow>
