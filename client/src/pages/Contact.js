@@ -1,5 +1,6 @@
 //DEPENDENCIES
-import React from "react";
+import React, { Component } from "react";
+import axios from "axios";
     //components
 import BgImage from "../components/BgImage";
 import { 
@@ -15,8 +16,40 @@ import {
 import './css/pages.css';
 
 //PAGE
-const Contact = () => {
+class Contact extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+        }
+    }
 
+    handleSubmit(e){
+        e.preventDefault();
+        console.log(this.state);
+        axios({
+          method: "POST", 
+          url:"http://localhost:3002/send", 
+          data:  this.state
+        }).then((response)=>{
+          if (response.data.status === 'success'){
+            alert("Message Sent Successfully. Have a great day!"); 
+            this.resetForm()
+          }else if(response.data.status === 'fail'){
+            alert("Oh no, something went wrong! The Message has failed to send.")
+          }
+        })
+    }
+    
+    resetForm(){
+        
+         this.setState({name: "", email: "", subject: "", message: ""})
+    }
+
+    render() {
         return (
             <div className='pageContainer'>
                 <BgImage>
@@ -37,6 +70,7 @@ const Contact = () => {
                                     {/* Form Section */}
                                     <MDBCol lg="5" className="lg-0 mb-4">
                                         <MDBCard>
+                                            {/* Form Header */}
                                             <MDBCardBody>
                                                 <div className="text-center form-header indigo accent-1">
                                                     <h3 className="mt-2">
@@ -46,45 +80,61 @@ const Contact = () => {
                                                 <p className="text-center font-small dark-grey-text">
                                                     I will return your message as soon as possible.
                                                 </p>
-                                                <div className="md-form">
-                                                    <MDBInput
-                                                        icon="user"
-                                                        label="Your name"
-                                                        iconClass="grey-text"
-                                                        type="text"
-                                                        id="form-name"
-                                                    />
-                                                </div>
-                                                <div className="md-form">
-                                                    <MDBInput
-                                                        icon="envelope"
-                                                        label="Your email"
-                                                        iconClass="grey-text"
-                                                        type="text"
-                                                        id="form-email"
-                                                    />
-                                                </div>
-                                                <div className="md-form">
-                                                    <MDBInput
-                                                        icon="tag"
-                                                        label="Subject"
-                                                        iconClass="grey-text"
-                                                        type="text"
-                                                        id="form-subject"
-                                                    />
-                                                </div>
-                                                <div className="md-form">
-                                                    <MDBInput
-                                                        icon="pencil-alt"
-                                                        label="Message"
-                                                        iconClass="grey-text"
-                                                        type="textarea"
-                                                        id="form-text"
-                                                    />
-                                                </div>
-                                                <div className="text-center">
-                                                    <MDBBtn color="indigo">Submit</MDBBtn>
-                                                </div>
+                                                {/* Form Input */}
+                                                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST"> 
+                                                    <div className="md-form form-group">
+                                                        <MDBInput
+                                                            className="form-control"
+                                                            icon="user"
+                                                            label="Your name"
+                                                            iconClass="grey-text"
+                                                            type="text"
+                                                            value={this.state.name}
+                                                            onChange={this.onNameChange.bind(this)}
+                                                            id="form-name"                                                        
+                                                        />
+                                                    </div>
+                                                    <div className="md-form form-group">
+                                                        <MDBInput
+                                                            className="form-control"
+                                                            icon="envelope"
+                                                            label="Your email"
+                                                            iconClass="grey-text"
+                                                            type="email"
+                                                            value={this.state.email}
+                                                            onChange={this.onEmailChange.bind(this)}
+                                                            id="form-email"
+                                                        />
+                                                    </div>
+                                                    <div className="md-form form-group">
+                                                        <MDBInput
+                                                            className="form-control"
+                                                            icon="tag"
+                                                            label="Subject"
+                                                            iconClass="grey-text"
+                                                            type="text"
+                                                            value={this.state.subject}
+                                                            onChange={this.onSubjectChange.bind(this)}
+                                                            id="form-subject"
+                                                        />
+                                                    </div>
+                                                    <div className="md-form form-group">
+                                                        <MDBInput
+                                                            className="form-control"
+                                                            icon="pencil-alt"
+                                                            label="Message"
+                                                            iconClass="grey-text"
+                                                            type="textarea"
+                                                            rows="5"
+                                                            value={this.state.message}
+                                                            onChange={this.onMessageChange.bind(this)}
+                                                            id="form-text"   
+                                                        />
+                                                    </div>
+                                                    <div className="text-center">
+                                                        <MDBBtn color="indigo" type="submit">Submit</MDBBtn>
+                                                    </div>
+                                                </form>
                                             </MDBCardBody>
                                         </MDBCard>
                                     </MDBCol>
@@ -137,6 +187,19 @@ const Contact = () => {
                 </BgImage>
             </div>
         );
-    }   
+    }  
+    onNameChange(event) {
+        this.setState({name: event.target.value})
+    }
+    onEmailChange(event) {
+        this.setState({email: event.target.value})
+    }
+    onSubjectChange(event) {
+        this.setState({subject: event.target.value})
+    } 
+    onMessageChange(event) {
+        this.setState({message: event.target.value})
+    }
+}
 
 export default Contact;
