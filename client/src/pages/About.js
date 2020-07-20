@@ -3,11 +3,9 @@ import React from 'react';
   //components
 import BgImage from "../components/BgImage";
 import {
-  MDBMask,
   MDBRow,
   MDBCol,
   MDBBtn,
-  MDBView,
   MDBContainer
 } from 'mdbreact';
   //styles
@@ -54,9 +52,9 @@ const About = () => {
               </MDBCol>
 
               <MDBCol md='12' className='mb-4 white-text text-center'>
-                <MDBBtn gradient="purple"><a href="/contact" className="white-text">Contact Me</a></MDBBtn>
-                <MDBBtn gradient="peach"><a href="/gallery_code" className="white-text">Web Development Gallery</a></MDBBtn>
-                <MDBBtn gradient="peach"><a href="/gallery_vfx" className="white-text">VFX Gallery</a></MDBBtn>
+                <a href="/contact" className="white-text"><MDBBtn gradient="purple">Contact Me</MDBBtn></a>
+                <a href="/gallery_code" className="white-text"><MDBBtn gradient="peach">Web Development Gallery</MDBBtn></a>
+                <a href="/gallery_vfx" className="white-text"><MDBBtn gradient="peach">VFX Gallery</MDBBtn></a>
               </MDBCol>
                   
             </MDBRow>

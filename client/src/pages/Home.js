@@ -37,8 +37,8 @@ const Home = () => {
                       I learn new skills quickly, with the ability to pivot and take on new 
                       challenges. I am seeking a transition into Web and Software Development.
                     </p>
-                    <MDBBtn gradient="peach"><a href="/about" className="white-text">Read More</a></MDBBtn>
-                    <MDBBtn gradient="purple"><a href="/contact" className="white-text">Contact Me</a></MDBBtn>
+                    <a href="/about" className="white-text py-3"><MDBBtn gradient="peach">Read More</MDBBtn></a>
+                    <a href="/contact" className="white-text"><MDBBtn gradient="purple">Contact Me</MDBBtn></a>
                     
                 </MDBCol>
                 {/* Right Column will contain image */}
