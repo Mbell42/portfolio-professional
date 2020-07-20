@@ -43,9 +43,7 @@ class Contact extends Component {
           }
         })
     }
-    
     resetForm(){
-        
          this.setState({name: "", email: "", subject: "", message: ""})
     }
 
