@@ -32,7 +32,7 @@ class Contact extends Component {
         console.log(this.state);
         axios({
           method: "POST", 
-          url:"http://localhost:3002/send", 
+          url:"http://localhost:3002/api/send", 
           data:  this.state
         }).then((response)=>{
           if (response.data.status === 'success'){
