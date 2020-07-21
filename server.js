@@ -1,6 +1,7 @@
 //DEPENDENCIES
 const express = require("express");
-const router = express.Router();
+const bodyParser = require("body-parser");
+// const router = express.Router();
 const axios = require("axios");
 
 const nodemailer = require("nodemailer");
@@ -37,9 +38,7 @@ transporter.verify((error, success) => {
     console.log("Email server for contact form is set up and ready.");
   }
 });
-async function sendMail () {
-try {
-  let response = new Promise((resolve, reject) => {
+
   const formPost = axios.post(PORT, (req, res) => {
     const name = req.body.name
     const email = req.body.email
@@ -67,12 +66,6 @@ try {
       }
     });
   });
-});
-console.log("returned data:", response);
-} catch (e) {
-  console.log(`axios request failed: ${e}`)
-} 
-}
 //End nodemailer section
 
 

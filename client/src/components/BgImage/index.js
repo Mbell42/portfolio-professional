@@ -4,27 +4,24 @@ import React from "react";
 import { MDBMask, MDBView, } from 'mdbreact';
 
   //images
-import mbSquare from "../../images/portrait/mbSquare.jpg";
-import beachSunset from "../../images/stock-free-images/joe-desousa/beach-sunset.jpg";
-import mountainPass from "../../images/stock-free-images/guillaume-briard/mountain-pass.jpg";
-import mountainRangeDay from "../../images/stock-free-images/jerry-zhang/mountain-range-day.jpg";
-import mountainRangeNight from "../../images/stock-free-images/benjamin-voros/mountain-range-night.jpg";
+import mountainPassFade from "../../images/stock-free-images/guillaume-briard/mountain-pass-fade.jpg";
 
 //COMPONENT
 const BgImage = (props) => {
-      return (
-          <div>
-            {/* Background image */}
-            {/* <MDBView src={beachSunset}> */}
-            {/* <MDBView src={mountainPass}> */}
-            <MDBView src={mountainRangeDay}>
-            {/* <MDBView src={mountainRangeNight}> */}
-                <MDBMask className='rgba-black-light' />
-                {props.children}
-            </MDBView>
-            </div>
-        );
-      }
+  return (
+    <div>
+      {/* Background image */}
+      <MDBView src={mountainPassFade}>
+          <MDBMask className='rgba-black-light' />
+          {props.children}
+      </MDBView>
+      {/* <p>mountain-pass <span>Photo by <a href=
+      "https://unsplash.com/@feelalivefilms?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Guillaume Briard
+      </a> on <a href=
+      "https://unsplash.com/s/photos/mountain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash
+      </a></span><p> */}
+    </div>
+  );
+}
     
-    
-    export default BgImage;
+export default BgImage;

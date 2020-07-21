@@ -59,7 +59,7 @@ class Contact extends Component {
                             {/* Main column will contain about header, text, and calls to action */}
                             {/* Header */}
                             <MDBCol md='12' className='mb-4 white-text '>
-                                <h1 className="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5">
+                                <h1 className="h1-reponsive text-center white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5">
                                     Contact me
                                 </h1>
                                 <hr className='hr-light my-4' />
