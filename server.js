@@ -2,12 +2,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-
 const router = express.Router();
 const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const axios = require("axios");
-
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const creds = require("./config/config.js");
