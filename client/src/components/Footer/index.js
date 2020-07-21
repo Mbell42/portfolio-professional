@@ -68,7 +68,7 @@ const Footer = () => {
         <p className="text-center">
             matthewbell1030@gmail.com<br />phone: 858-922-5440
           </p>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a>
+          &copy; {new Date().getFullYear()} Copyright
         </MDBContainer>
       </div>
     </MDBFooter>

@@ -132,7 +132,7 @@ class Contact extends Component {
                                                         />
                                                     </div>
                                                     <div className="text-center">
-                                                        <MDBBtn color="indigo" type="submit">Submit</MDBBtn>
+                                                        <MDBBtn gradient="peach" type="submit">Submit</MDBBtn>
                                                     </div>
                                                 </form>
                                             </MDBCardBody>
