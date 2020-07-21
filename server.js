@@ -21,7 +21,7 @@ app.listen(3002);
 
 //nodemailer section
 let transport = {
-  host: "smtp.gmail.com", //provider address
+  host: creds.SMTP, //provider address
   port: 587,
   secure: false,
   auth: {
