@@ -1,6 +1,7 @@
 //DEPENDENCIES
 const express = require("express");
 const router = express.Router();
+const axios = require("axios");
 
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -8,9 +9,7 @@ const creds = require("./config/config.js");
 
 
 const path = require("path");
-const routes = require("./routes");
-// const { USER } = require("./config/config.js")
-// const { PASS } = require("./config/config.js")
+// const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -19,15 +18,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 
-//nodemailer
-const transport = {
-  service: "gmail", //provider address
+//nodemailer section
+let transport = {
+  host: "smtp.gmail.com", //provider address
   port: 587,
+  secure: false,
   auth: {
-    user: "matthewbell1030@gmail.com",
-    pass: "Artemis8942"
-  }
-}
+    user: creds.USER,
+    pass: creds.PASS
+  },
+};
 
 const transporter = nodemailer.createTransport(transport)
 transporter.verify((error, success) => {
@@ -37,33 +37,45 @@ transporter.verify((error, success) => {
     console.log("Email server for contact form is set up and ready.");
   }
 });
+async function sendMail () {
+try {
+  let response = new Promise((resolve, reject) => {
+  const formPost = axios.post(PORT, (req, res) => {
+    const name = req.body.name
+    const email = req.body.email
+    const subject = req.body.subject
+    const message = req.body.message
+    const content = `name: ${name} \n email: ${email} \n subject: ${subject} \n message: ${message}`
 
-router.post('/send', (req, res, next) => {
-  const name = req.body.name
-  const email = req.body.email
-  const subject = req.body.subject
-  const message = req.body.message
-  const content = `name: ${name} \n email: ${email} \n message: ${message} `
-
-  const mail = {
-    from: name,
-    to: creds.USER,  
-    subject: 'New Test Message from Contact Form',
-    text: content
-  }
-
-  transporter.sendMail(mail, (err, data) => {
-    if (err) {
-      res.json({
-        status: 'fail'
-      })
-    } else {
-      res.json({
-       status: 'success'
-      })
+    const mail = {
+      from: name,
+      to: creds.USER,  
+      subject: "New Test Message from Contact Form",
+      text: content
     }
-  })
-})
+
+    let result = response;
+    transporter.sendMail(mail, (err, data) => {
+      if (err) {
+        res.json({
+          status: 'fail'
+        })
+      } else {
+        res.json({
+        status: 'success'
+        })
+      }
+    });
+  });
+});
+console.log("returned data:", response);
+} catch (e) {
+  console.log(`axios request failed: ${e}`)
+} 
+}
+//End nodemailer section
+
+
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -71,14 +83,14 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Add routes, both API and view
-app.use(routes);
+// app.use(routes);
 
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-// app.listen(3002)
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
+

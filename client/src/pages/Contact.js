@@ -32,20 +32,23 @@ class Contact extends Component {
         console.log(this.state);
         axios({
           method: "POST", 
-          url:"http://localhost:3002/api/send", 
-          data:  this.state
+          url:"http://localhost:3001/", 
+          data:  this.state,
+          headers: {"Content-Type": "application/json"}
         }).then((response)=>{
           if (response.data.status === 'success'){
             alert("Message Sent Successfully. Have a great day!"); 
+            console.log(response);
             this.resetForm()
           }else if(response.data.status === 'fail'){
             alert("Oh no, something went wrong! The Message has failed to send.")
+            console.log(response);
           }
         })
-    }
+    };
     resetForm(){
          this.setState({name: "", email: "", subject: "", message: ""})
-    }
+    };
 
     render() {
         return (
