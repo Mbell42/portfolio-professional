@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 const axios = require("axios");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
-const creds = require("./config/config.js");
+// const creds = require("./config/config.js");
 const { use } = require("./routes");
 
 //MIDDLEWARE
@@ -25,8 +25,8 @@ let transport = {
   port: 587,
   secure: false,
   auth: {
-    user: creds.USER || process.env.SMTP_USER,
-    pass: creds.PASS || process.env.SMTP_PASS
+    user: process.env.SMTP_USER || creds.USER,
+    pass: process.env.SMTP_PASS || creds.PASS 
   },
 };
 
