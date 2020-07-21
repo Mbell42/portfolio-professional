@@ -1,23 +1,25 @@
 //DEPENDENCIES
 const express = require("express");
 const bodyParser = require("body-parser");
-// const router = express.Router();
+const path = require("path");
+
+const router = express.Router();
+const routes = require("./routes");
+const PORT = process.env.PORT || 3001;
 const axios = require("axios");
 
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const creds = require("./config/config.js");
-
-
-const path = require("path");
-// const routes = require("./routes");
-const PORT = process.env.PORT || 3001;
-const app = express();
+const { use } = require("./routes");
 
 //MIDDLEWARE
+const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
+app.use("/", router);
+app.listen(3002);
 
 //nodemailer section
 let transport = {
@@ -31,6 +33,7 @@ let transport = {
 };
 
 const transporter = nodemailer.createTransport(transport)
+
 transporter.verify((error, success) => {
   if (error) {
     console.log(error);
@@ -39,7 +42,7 @@ transporter.verify((error, success) => {
   }
 });
 
-  const formPost = axios.post(PORT, (req, res) => {
+  router.post('/send', (req, res, next) => {
     const name = req.body.name
     const email = req.body.email
     const subject = req.body.subject
@@ -51,9 +54,8 @@ transporter.verify((error, success) => {
       to: creds.USER,  
       subject: "New Test Message from Contact Form",
       text: content
-    }
+    };
 
-    let result = response;
     transporter.sendMail(mail, (err, data) => {
       if (err) {
         res.json({
@@ -66,6 +68,7 @@ transporter.verify((error, success) => {
       }
     });
   });
+
 //End nodemailer section
 
 
@@ -76,7 +79,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Add routes, both API and view
-// app.use(routes);
+app.use(routes);
 
 // Send every request to the React app
 // Define any API routes before this runs
