@@ -20,15 +20,28 @@ app.use("/", router);
 
 
 //nodemailer section
+// transport - Heroku
 let transport = {
   host: process.env.GMAIL_SMTP, //provider address
-  port: 587,
-  secure: false,
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.GMAIL_USER,
     pass: process.env.GMAIL_PASS  
   },
 };
+
+
+// transport - Local
+// let transport = {
+//   host: creds.SMTP, //provider address
+//   port: 587,
+//   secure: false,
+//   auth: {
+//     user: creds.USER,
+//     pass: creds.PASS
+//   },
+// };
 
 const transporter = nodemailer.createTransport(transport)
 
