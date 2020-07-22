@@ -5,12 +5,15 @@ const path = require("path");
 const router = express.Router();
 const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
-const axios = require("axios");
+// const axios = require("axios");
 const nodemailer = require("nodemailer");
-var helper = require('sendgrid').mail;
+var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+
 const cors = require("cors");
+const { getMaxListeners } = require("process");
 // const creds = require("./config/config.js");
-const { use } = require("./routes");
+
+// const { use } = require("./routes");
 
 //MIDDLEWARE
 const app = express();
@@ -22,16 +25,24 @@ app.use("/", router);
 
 //nodemailer section
 // sendgrid ransport - for Heroku
-
+// let transport = {
+//   host: "smtp.gmail.com", //provider address
+//   port: 587,
+//   secure: false,
+//   auth: {
+//     user: "apikey",
+//     pass: "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"  
+//   },
+// };
 
 // gmail ransport - for Heroku
 let transport = {
-  host: process.env.GMAIL_SMTP, //provider address
+  host: GMAIL_SMTP, //provider address
   port: 587,
   secure: false,
   auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_PASS  
+    user: GMAIL_USER,
+    pass: GMAIL_PASS  
   },
 };
 
@@ -66,7 +77,7 @@ transporter.verify((error, success) => {
 
     const mail = {
       from: name,
-      to: process.env.GMAIL_USER,  
+      to: GMAIL_USER,  
       subject: "New Test Message from Contact Form",
       text: content
     };
