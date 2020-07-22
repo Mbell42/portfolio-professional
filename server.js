@@ -4,14 +4,14 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const router = express.Router();
 const routes = require("./routes");
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3000;
 const nodemailer = require("nodemailer");
 var sg = require('sendgrid')(process.env.SENDGRID_KEY);
 // const sgMail = require('@sendgrid/mail');
 // sgMail.setApiKey(process.env.SENDGRID_KEY)
 
 const cors = require("cors");
-const { getMaxListeners } = require("process");
+// const { getMaxListeners } = require("process");
 // const creds = require("./config/config.js");
 
 // const { use } = require("./routes");
@@ -125,7 +125,7 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-// app.listen(3002);
+app.listen(3002);
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
