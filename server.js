@@ -20,7 +20,7 @@ app.use("/", router);
 
 
 //nodemailer section
-// transport - Heroku
+// transport - for Heroku
 let transport = {
   host: process.env.GMAIL_SMTP, //provider address
   port: 587,
@@ -32,7 +32,7 @@ let transport = {
 };
 
 
-// transport - Local
+// transport - for Local use
 // let transport = {
 //   host: creds.SMTP, //provider address
 //   port: 587,
@@ -62,7 +62,7 @@ transporter.verify((error, success) => {
 
     const mail = {
       from: name,
-      to: creds.USER,  
+      to: process.env.GMAIL_USER,  
       subject: "New Test Message from Contact Form",
       text: content
     };
