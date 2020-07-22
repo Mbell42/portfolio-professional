@@ -37,7 +37,7 @@ app.use("/", router);
 
 // gmail ransport - for Heroku
 let transport = {
-  host: GMAIL_SMTP, //provider address
+  host: "smtp.gmail.com", //provider address
   port: 587,
   secure: false,
   auth: {
