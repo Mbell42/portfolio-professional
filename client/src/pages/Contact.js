@@ -40,7 +40,7 @@ class Contact extends Component {
         // let urlPORT = PORT + "/send";
         axios({
             method: "POST", 
-            url: "https://portfolio-mattbell.herokuapp.com:3002/send", 
+            url: "/send", 
             data:  this.state
             })
             .then((response)=>{
