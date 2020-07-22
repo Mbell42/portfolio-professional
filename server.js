@@ -5,9 +5,8 @@ const path = require("path");
 const router = express.Router();
 const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
-// const axios = require("axios");
 const nodemailer = require("nodemailer");
-// var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+var sg = require('sendgrid')(process.env.SENDGRID_KEY);
 
 const cors = require("cors");
 const { getMaxListeners } = require("process");
@@ -24,27 +23,27 @@ app.use("/", router);
 
 
 //nodemailer section
-// sendgrid ransport - for Heroku
-// let transport = {
-//   host: "smtp.gmail.com", //provider address
-//   port: 587,
-//   secure: false,
-//   auth: {
-//     user: "apikey",
-//     pass: ""  
-//   },
-// };
-
-// gmail ransport - for Heroku
+// sendgrid transport - for Heroku
 let transport = {
-  host: process.env.GMAIL_SMTP, //provider address
+  host: process.env.SENDGRID_SMTP, //provider address
   port: 587,
   secure: false,
   auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_PASS  
+    user: "apikey",
+    pass: process.env.SENDGRID_KEY  
   },
 };
+
+// gmail transport - for Heroku
+// let transport = {
+//   host: process.env.GMAIL_SMTP, //provider address
+//   port: 587,
+//   secure: false,
+//   auth: {
+//     user: process.env.GMAIL_USER,
+//     pass: process.env.GMAIL_PASS  
+//   },
+// };
 
 
 // gmail transport - for Local use
