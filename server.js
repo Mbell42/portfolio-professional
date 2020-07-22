@@ -81,11 +81,12 @@ transporter.verify((error, success) => {
 });
 
   router.post('/send', (req, res, next) => {
-    const name = req.body.name
-    const email = req.body.email
-    const subject = req.body.subject
-    const message = req.body.message
-    const content = `name: ${name} \n email: ${email} \n subject: ${subject} \n message: ${message}`
+    const name = req.body.name;
+    const email = req.body.email;
+    const subject = req.body.subject;
+    const message = req.body.message;
+    const content = `name: ${name} \n email: ${email} \n subject: ${subject} \n message: ${message}`;
+    console.log(content);
 
     const mail = {
       from: name,
@@ -96,10 +97,12 @@ transporter.verify((error, success) => {
 
     transporter.sendMail(mail, (err, data) => {
       if (err) {
+        console.log(err);
         res.json({
           status: 'fail'
         })
       } else {
+        console.log(data);
         res.json({
         status: 'success'
         })
