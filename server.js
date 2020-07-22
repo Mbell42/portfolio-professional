@@ -4,9 +4,11 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const router = express.Router();
 const routes = require("./routes");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 const nodemailer = require("nodemailer");
 var sg = require('sendgrid')(process.env.SENDGRID_KEY);
+// const sgMail = require('@sendgrid/mail');
+// sgMail.setApiKey(process.env.SENDGRID_KEY)
 
 const cors = require("cors");
 const { getMaxListeners } = require("process");
@@ -22,7 +24,16 @@ app.use(express.json());
 app.use("/", router);
 
 
-//nodemailer section
+//sendgrid section
+// const msg = {
+//   to: 'test@example.com',
+//   from: 'test@example.com',
+//   subject: 'Sending with Twilio SendGrid is Fun',
+//   text: 'and easy to do anywhere, even with Node.js',
+//   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+// };
+// sgMail.send(msg);
+
 // sendgrid transport - for Heroku
 let transport = {
   host: process.env.SENDGRID_SMTP, //provider address
@@ -33,7 +44,9 @@ let transport = {
     pass: process.env.SENDGRID_KEY  
   },
 };
+// end sendgrid section
 
+//nodemailer section
 // gmail transport - for Heroku
 // let transport = {
 //   host: process.env.GMAIL_SMTP, //provider address
@@ -112,7 +125,7 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-app.listen(3002);
+// app.listen(3002);
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
