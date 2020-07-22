@@ -31,12 +31,16 @@ class Contact extends Component {
         console.log(this.state);
     };
 
+    
+
     handleSubmit(e){
         e.preventDefault();
         console.log(this.state);
+        // const PORT = process.env.PORT || 3000;
+        // let urlPORT = PORT + "/send";
         axios({
             method: "POST", 
-            url:"http://localhost:3002/send", 
+            url: "https://portfolio-mattbell.herokuapp.com:3002/send", 
             data:  this.state
             })
             .then((response)=>{
