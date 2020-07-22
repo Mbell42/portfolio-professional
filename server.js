@@ -37,12 +37,12 @@ app.use("/", router);
 
 // gmail ransport - for Heroku
 let transport = {
-  host: "smtp.gmail.com", //provider address
+  host: process.env.GMAIL_SMTP, //provider address
   port: 587,
   secure: false,
   auth: {
-    user: GMAIL_USER,
-    pass: GMAIL_PASS  
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS  
   },
 };
 
@@ -77,7 +77,7 @@ transporter.verify((error, success) => {
 
     const mail = {
       from: name,
-      to: GMAIL_USER,  
+      to: process.env.GMAIL_USER,  
       subject: "New Test Message from Contact Form",
       text: content
     };
