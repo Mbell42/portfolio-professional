@@ -21,12 +21,12 @@ app.listen(3002);
 
 //nodemailer section
 let transport = {
-  host: process.env.SMTP_ADDRESS, //provider address
+  host: process.env.GMAIL_ADDRESS, //provider address
   port: 587,
   secure: false,
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS  
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS  
   },
 };
 
