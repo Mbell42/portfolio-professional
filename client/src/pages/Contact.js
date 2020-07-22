@@ -31,14 +31,14 @@ class Contact extends Component {
         console.log(this.state);
     };
 
-    
+    // url: "http://localhost:3002/send",
 
     handleSubmit(e){
         e.preventDefault();
         console.log(this.state);
         axios({
             method: "POST", 
-            url: "http://localhost:3002/send", 
+            url: encodeURI("https://portfolio-mattbell.herokuapp.com/" + ":" + process.env.PORT + "/send");
             data:  this.state
             })
             .then((response)=>{
