@@ -7,7 +7,7 @@ const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 // const axios = require("axios");
 const nodemailer = require("nodemailer");
-var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+// var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
 const cors = require("cors");
 const { getMaxListeners } = require("process");
@@ -31,7 +31,7 @@ app.use("/", router);
 //   secure: false,
 //   auth: {
 //     user: "apikey",
-//     pass: "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"  
+//     pass: ""  
 //   },
 // };
 
