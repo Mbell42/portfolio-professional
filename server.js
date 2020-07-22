@@ -17,11 +17,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(3002);
+
 
 //nodemailer section
 let transport = {
-  host: process.env.GMAIL_ADDRESS, //provider address
+  host: process.env.GMAIL_SMTP, //provider address
   port: 587,
   secure: false,
   auth: {
@@ -84,6 +84,8 @@ app.use(routes);
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
+app.listen(3002);
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
