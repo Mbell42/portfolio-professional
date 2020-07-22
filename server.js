@@ -23,8 +23,8 @@ app.use("/", router);
 // transport - Heroku
 let transport = {
   host: process.env.GMAIL_SMTP, //provider address
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.GMAIL_USER,
     pass: process.env.GMAIL_PASS  
