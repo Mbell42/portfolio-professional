@@ -125,7 +125,10 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-app.listen(3002);
+app.listen(3002, function() {
+  console.log(`🌎 ==> Email API server now on port 3002!`);
+});
+
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });

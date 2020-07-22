@@ -36,11 +36,9 @@ class Contact extends Component {
     handleSubmit(e){
         e.preventDefault();
         console.log(this.state);
-        // const PORT = process.env.PORT || 3000;
-        // let urlPORT = PORT + "/send";
         axios({
             method: "POST", 
-            url: "/send", 
+            url: "http://localhost:3002/send", 
             data:  this.state
             })
             .then((response)=>{
