@@ -7,6 +7,7 @@ const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const axios = require("axios");
 const nodemailer = require("nodemailer");
+var helper = require('sendgrid').mail;
 const cors = require("cors");
 // const creds = require("./config/config.js");
 const { use } = require("./routes");
@@ -20,7 +21,10 @@ app.use("/", router);
 
 
 //nodemailer section
-// transport - for Heroku
+// sendgrid ransport - for Heroku
+
+
+// gmail ransport - for Heroku
 let transport = {
   host: process.env.GMAIL_SMTP, //provider address
   port: 587,
@@ -32,7 +36,7 @@ let transport = {
 };
 
 
-// transport - for Local use
+// gmail transport - for Local use
 // let transport = {
 //   host: creds.SMTP, //provider address
 //   port: 587,
