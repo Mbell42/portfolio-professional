@@ -38,7 +38,7 @@ class Contact extends Component {
         console.log(this.state);
         axios({
             method: "POST", 
-            url: "https://portfolio-mattbell.herokuapp.com/send",
+            url: "https://localhost:3002/send",
             data:  this.state
             })
             .then((response)=>{
