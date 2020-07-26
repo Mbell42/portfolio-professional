@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // const nodemailer = require("nodemailer");
-const creds = require("./config/config.js");
+// const creds = require("./config/config.js");
 const cors = require("cors");
 // require('dotenv').config();
 // var sg = require('sendgrid')(process.env.SENDGRID_KEY);
