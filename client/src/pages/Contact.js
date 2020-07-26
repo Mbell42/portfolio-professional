@@ -36,14 +36,14 @@ class Contact extends Component {
         console.log(this.state);
         axios({
             method: "POST", 
-            url: "https://localhost:3002/send",
+            url: "https://localhost:3001/send",
             data:  this.state
             })
             .then((response)=>{
-                if (response.data.status === 'success'){
+                if (response.data.status === "success"){
                     alert("Message Sent."); 
                     this.resetForm()
-                }else if(response.data.status === 'fail'){
+                }else if(response.data.status === "fail"){
                     alert("Message Failed to Send.")
                 }
             })
