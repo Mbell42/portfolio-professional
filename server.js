@@ -10,11 +10,9 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 require('dotenv').config();
-// const nodemailer = require("nodemailer");
+
 // const creds = require("./config/config.js");
 const cors = require("cors");
-
-// var sg = require('sendgrid')(process.env.SENDGRID_KEY);
 
 //MIDDLEWARE
 app.use("/", router);
@@ -41,48 +39,6 @@ sgMail
   .send(msg)
   .then(() => console.log(msg))
   .catch(console.log);
-
-// const transporter = nodemailer.createTransport(transport)
-  
-// transporter.verify((error, success) => {
-//   console.log(creds);
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     console.log("Email server for contact form is verified.");
-//   }
-// });
-
-//   router.post('/send', (req, res, next) => {
-//     const name = req.body.name;
-//     const email = req.body.email;
-//     const subject = req.body.subject;
-//     const message = req.body.message;
-//     const content = `name: ${name} \n email: ${email} \n subject: ${subject} \n message: ${message}`;
-//     console.log(content);
-
-//     const mail = {
-//       from: name,
-//       to: creds.GMAIL_USER,  
-//       subject: "New Test Message from Contact Form",
-//       text: content
-//     };
-
-//     transporter.sendMail(mail, (err, data) => {
-//       if (err) {
-//         console.log(err);
-//         res.json({
-//           status: "fail"
-//         })
-//       } else {
-//         console.log(data);
-//         res.json({
-//         status: "success"
-//         })
-//       }
-//     });
-//   });
-//End nodemailer section
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
