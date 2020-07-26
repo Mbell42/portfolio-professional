@@ -22,9 +22,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 
-// const mailTo = process.env.SENDGRID_TO;
+const mailTo = process.env.SENDGRID_TO;
 // const mailTo = creds.GMAIL_USER;
-// const mailFrom = process.env.SENDGRID_FROM;
+const mailFrom = process.env.SENDGRID_FROM;
 // const mailFrom = creds.PASS;
 
 // using Twilio SendGrid's v3 Node.js Library
@@ -32,8 +32,8 @@ app.use(express.json());
 const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const msg = {
-  to: "matthewbell1030@gmail.com",
-  from: "MBCMailerService@gmail.com",
+  to: mailTo,
+  from: mailFrom,
   subject: "Sending with Twilio SendGrid is Fun",
   text: "and easy to do anywhere, even with Node.js",
 };
