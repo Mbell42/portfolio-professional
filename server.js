@@ -20,25 +20,50 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 
-const mailTo = process.env.SENDGRID_TO;
+// const mailTo = process.env.SENDGRID_TO;
 // const mailTo = creds.GMAIL_USER;
-const mailFrom = process.env.SENDGRID_FROM;
+// const mailFrom = process.env.SENDGRID_FROM;
 // const mailFrom = creds.PASS;
+
+
+const mailTo = process.env.MAILGUN_TO;
+const mailFrom = process.env.MAILGUN_FROM;
+const mailKey = process.env.MAILGUN_KEY;
+const mailDomain = process.env.MY_DOMAIN;
+
+const mailgun = require("mailgun-js");
+const DOMAIN = mailDomain;
+const mg = mailgun({apiKey: mailKey, domain: DOMAIN});
+const data = {
+	from: mailFrom,
+	to: mailTo,
+	subject: "Hello",
+	text: "Did you get that thing?"
+};
+mg.messages().send(data, function (error, body) {
+	console.log(body);
+});
+
+
+
 
 // using Twilio SendGrid's v3 Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
-const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-const msg = {
-  to: mailTo,
-  from: mailFrom,
-  subject: "Sending with Twilio SendGrid is Fun",
-  text: "and easy to do anywhere, even with Node.js",
-};
-sgMail
-  .send(msg)
-  .then(() => console.log(msg))
-  .catch(console.log);
+// const sgMail = require("@sendgrid/mail");
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// const msg = {
+//   to: mailTo,
+//   from: mailFrom,
+//   subject: "Sending with Twilio SendGrid is Fun",
+//   text: "and easy to do anywhere, even with Node.js",
+// };
+// sgMail
+//   .send(msg)
+//   .then(() => console.log(msg))
+//   .catch(console.log);
+
+
+
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
