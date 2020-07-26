@@ -26,13 +26,11 @@ class Contact extends Component {
             message: "",
         }
     }
+
     resetForm(){
         this.setState({name: "", email: "", subject: "", message: ""});
         console.log(this.state);
     };
-
-    // url: "http://localhost:3002/send",
-
     handleSubmit(e){
         e.preventDefault();
         console.log(this.state);
@@ -46,7 +44,7 @@ class Contact extends Component {
                     alert("Message Sent."); 
                     this.resetForm()
                 }else if(response.data.status === 'fail'){
-                    alert("Message failed to send.")
+                    alert("Message Failed to Send.")
                 }
             })
     }

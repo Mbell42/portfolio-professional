@@ -6,6 +6,8 @@ const router = express.Router();
 const routes = require("./routes");
 const PORT = process.env.PORT || 3000;
 const nodemailer = require("nodemailer");
+const  axios = require("axios");
+
 var sg = require('sendgrid')(process.env.SENDGRID_KEY);
 // const sgMail = require('@sendgrid/mail');
 // sgMail.setApiKey(process.env.SENDGRID_KEY)
@@ -47,7 +49,8 @@ let transport = {
 // end sendgrid section
 
 //nodemailer section
-// gmail transport - for Heroku
+
+// GMAIL transport - for Heroku
 // let transport = {
 //   host: process.env.GMAIL_SMTP, //provider address
 //   port: 587,
@@ -59,7 +62,7 @@ let transport = {
 // };
 
 
-// gmail transport - for Local use
+// GMAIL transport - for Local use
 // let transport = {
 //   host: creds.SMTP, //provider address
 //   port: 587,
@@ -76,7 +79,7 @@ transporter.verify((error, success) => {
   if (error) {
     console.log(error);
   } else {
-    console.log("Email server for contact form is set up and ready.");
+    console.log("Email server for contact form is verified.");
   }
 });
 
@@ -109,7 +112,6 @@ transporter.verify((error, success) => {
       }
     });
   });
-
 //End nodemailer section
 
 
