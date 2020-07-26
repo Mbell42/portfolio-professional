@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const router = express.Router();
 const routes = require("./routes");
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 require('dotenv').config();
@@ -10,10 +11,12 @@ require('dotenv').config();
 const cors = require("cors");
 
 //MIDDLEWARE
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", router);
-app.use(express.urlencoded({ extended: true }));
+
 app.use(cors());
-app.use(express.json());
+
 
 const mailTo = process.env.MAILGUN_TO;
 const mailFrom = process.env.MAILGUN_FROM;
@@ -22,15 +25,18 @@ const mailDomain = process.env.MY_DOMAIN;
 
 const mailgun = require("mailgun-js");
 const DOMAIN = mailDomain;
+console.log("contact form emails will be sent from: " + DOMAIN);
+
 
 // When /send api is hit with the post method, send email form contact form
-router.post('/send', (req, res, next) => {
+router.post("/send", (req, res) => {
+  console.log("request: ", req.body);
   const name = req.body.name;
   const email = req.body.email;
   const subject = req.body.subject;
   const text = req.body.message;
   const content = `name: ${name} \n email: ${email} \n subject: ${subject} \n message: ${text}`;
-  console.log(content);
+  console.log(`email content:  \n ${content}`);
 
   const mg = mailgun({apiKey: mailKey, domain: DOMAIN});
   const data = {

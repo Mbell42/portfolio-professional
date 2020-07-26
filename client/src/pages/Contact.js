@@ -34,20 +34,22 @@ class Contact extends Component {
     handleSubmit(e){
         e.preventDefault();
         console.log(this.state);
+
         axios({
             method: "POST", 
-            url: "https://localhost:3001/send",
-            data:  this.state
-            })
-            .then((response)=>{
-                if (response.data.status === "success"){
-                    alert("Message Sent."); 
-                    this.resetForm()
-                }else if(response.data.status === "fail"){
-                    alert("Message Failed to Send.")
-                }
-            })
-    }
+            url: "/send",
+            data: this.state
+        })
+        .then((response)=>{
+            console.log(response);
+            if (response.data.status === "success"){
+                alert("Message Sent."); 
+                this.resetForm()
+            }else if(response.data.status === "fail"){
+                alert("Message Failed to Send.")
+            }
+        })
+    };
     
     render() {
         return (
