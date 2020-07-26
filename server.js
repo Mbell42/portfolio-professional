@@ -7,7 +7,7 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 require('dotenv').config();
-// const creds = require("./config/config.js");
+const creds = require("./config/config.js");
 const cors = require("cors");
 
 //MIDDLEWARE
@@ -17,11 +17,17 @@ app.use("/", router);
 
 app.use(cors());
 
+// For local testing
+const mailTo = creds.MAILGUN_TO;
+const mailFrom = creds.MAILGUN_FROM;
+const mailKey = creds.MAILGUN_KEY;
+const mailDomain = creds.MY_DOMAIN;
 
-const mailTo = process.env.MAILGUN_TO;
-const mailFrom = process.env.MAILGUN_FROM;
-const mailKey = process.env.MAILGUN_KEY;
-const mailDomain = process.env.MY_DOMAIN;
+// for use with Heorku
+// const mailTo = process.env.MAILGUN_TO;
+// const mailFrom = process.env.MAILGUN_FROM;
+// const mailKey = process.env.MAILGUN_KEY;
+// const mailDomain = process.env.MY_DOMAIN;
 
 const mailgun = require("mailgun-js");
 const DOMAIN = mailDomain;
@@ -46,7 +52,11 @@ router.post("/send", (req, res) => {
     text: content
   };
   mg.messages().send(data, function (error, body) {
-	  console.log(body);
+    if(error) {
+      console.log(error);
+    } else {
+      console.log(body);
+    }
   });
 });
 

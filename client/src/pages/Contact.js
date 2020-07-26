@@ -28,28 +28,30 @@ class Contact extends Component {
     }
 
     resetForm(){
-        this.setState({name: "", email: "", subject: "", message: ""});
-        console.log(this.state);
+            this.setState({name: "", email: "", subject: "", message: ""});
     };
     handleSubmit(e){
         e.preventDefault();
         console.log(this.state);
-
-        axios({
-            method: "POST", 
-            url: "/send",
-            data: this.state
-        })
-        .then((response)=>{
-            console.log(response);
-            if (response.data.status === "success"){
-                alert("Message Sent."); 
-                this.resetForm()
-            }else if(response.data.status === "fail"){
-                alert("Message Failed to Send.")
-            }
-        })
+        try {
+            axios({
+                method: "POST", 
+                url: "/send",
+                data: this.state
+            })
+            .then(
+                setTimeout(() => {
+                    alert("email sent");
+                    this.resetForm()
+                }, 3000)
+            );
+        } catch (error) {
+            console.log(error);
+        }
     };
+
+        
+        
     
     render() {
         return (
