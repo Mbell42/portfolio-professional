@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // const nodemailer = require("nodemailer");
-// const creds = require("./config/config.js");
+const creds = require("./config/config.js");
 const cors = require("cors");
 // require('dotenv').config();
 // var sg = require('sendgrid')(process.env.SENDGRID_KEY);
@@ -21,21 +21,23 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 
-
+const mailTo = process.env.SENDGRID_TO;
+const mailFrom = process.env.SENDGRID_FROM;
 
 // using Twilio SendGrid's v3 Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
-const sgMail = require('@sendgrid/mail');
+const sgMail = require("@sendgrid/mail");
+const { MDBCarouselIndicator } = require("mdbreact");
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const msg = {
-  to: 'matthewbell1030@gmail.com',
-  from: 'MBCMailerService@gmail.com',
-  subject: 'Sending with Twilio SendGrid is Fun',
-  text: 'and easy to do anywhere, even with Node.js',
+  to: mailTo,
+  from: mailFrom,
+  subject: "Sending with Twilio SendGrid is Fun",
+  text: "and easy to do anywhere, even with Node.js",
 };
 sgMail
   .send(msg)
-  .then(() => console.log("send mail success"))
+  .then(() => console.log(msg))
   .catch(console.log);
 
 // const transporter = nodemailer.createTransport(transport)
