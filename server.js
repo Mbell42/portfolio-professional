@@ -38,7 +38,7 @@ const data = {
 	from: mailFrom,
 	to: mailTo,
 	subject: "Hello",
-	text: "Did you get that thing?"
+	text: "Did you get that thing I sent ya?"
 };
 mg.messages().send(data, function (error, body) {
 	console.log(body);
