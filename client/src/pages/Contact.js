@@ -15,7 +15,7 @@ import {
     //styles
 import './css/pages.css';
 
-//PAGE
+//COMPONENT
 class Contact extends Component {
     constructor(props) {
         super(props)
@@ -26,10 +26,12 @@ class Contact extends Component {
             message: "",
         }
     }
-
+//LOGIC
+    //reset the contact form
     resetForm(){
             this.setState({name: "", email: "", subject: "", message: ""});
     };
+    //
     handleSubmit(e){
         e.preventDefault();
         console.log(this.state);
@@ -49,10 +51,7 @@ class Contact extends Component {
             console.log(error);
         }
     };
-
-        
-        
-    
+//PAGE
     render() {
         return (
             <div className='pageContainer'>
