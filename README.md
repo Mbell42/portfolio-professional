@@ -6,7 +6,7 @@ My professional portfolio full-stack website at matthewbell-portfolio.com.
 
 ### User-Story
 
-As a user, I want to have a professional portfolio that
+As a user, I want to have a professional portfolio that has an easily identifiable domain, is easy to navigate, that includes a way for people to contact me.
 
 ## Technology
 
