@@ -1,3 +1,29 @@
 # portfolio-professional
 
-My professional portfolio website, built using HTML, React, MDBReact for the front-end, and using NodeJs, Express, Axios, Nodemailer, and Cors for the back-end. More details to come as it all comes together.
+## Description
+
+My professional portfolio full-stack website at matthewbell-portfolio.com.
+
+### User-Story
+
+As a user, I want to have a professional portfolio that
+
+## Technology
+
+### Front-End
+
+HTML
+React
+MDBReact
+
+### Back-End
+
+NodeJs
+Express and Body-Parser
+Axios
+MailGun
+Cors
+
+## Details
+
+More details to come as it all comes together.
