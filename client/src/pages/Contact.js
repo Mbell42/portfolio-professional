@@ -18,40 +18,40 @@ import './css/pages.css';
 
 //COMPONENT
 class Contact extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-        }
-    }
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         name: "",
+    //         email: "",
+    //         subject: "",
+    //         message: "",
+    //     }
+    // }
 // //LOGIC
     //reset the contact form
-    resetForm(){
-            this.setState({name: "", email: "", subject: "", message: ""});
-    };
-    //
-    handleSubmit(e){
-        e.preventDefault();
-        console.log(this.state);
-        try {
-            axios({
-                method: "POST", 
-                url: "/send",
-                data: this.state
-            })
-            .then(
-                setTimeout(() => {
-                    alert("email sent");
-                    this.resetForm()
-                }, 3000)
-            );
-        } catch (error) {
-            console.log(error);
-        }
-    };
+    // resetForm(){
+    //         this.setState({name: "", email: "", subject: "", message: ""});
+    // };
+    // //
+    // handleSubmit(e){
+    //     e.preventDefault();
+    //     console.log(this.state);
+    //     try {
+    //         axios({
+    //             method: "POST", 
+    //             url: "/send",
+    //             data: this.state
+    //         })
+    //         .then(
+    //             setTimeout(() => {
+    //                 alert("email sent");
+    //                 this.resetForm()
+    //             }, 3000)
+    //         );
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // };
 // //PAGE
     render() {
         return (
@@ -123,18 +123,18 @@ class Contact extends Component {
             </div>
         );
     }  
-    onNameChange(event) {
-        this.setState({name: event.target.value})
-    }
-    onEmailChange(event) {
-        this.setState({email: event.target.value})
-    }
-    onSubjectChange(event) {
-        this.setState({subject: event.target.value})
-    } 
-    onMessageChange(event) {
-        this.setState({message: event.target.value})
-    }
+    // onNameChange(event) {
+    //     this.setState({name: event.target.value})
+    // }
+    // onEmailChange(event) {
+    //     this.setState({email: event.target.value})
+    // }
+    // onSubjectChange(event) {
+    //     this.setState({subject: event.target.value})
+    // } 
+    // onMessageChange(event) {
+    //     this.setState({message: event.target.value})
+    // }
 }
 
 export default Contact;
