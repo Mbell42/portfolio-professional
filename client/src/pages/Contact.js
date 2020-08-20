@@ -16,8 +16,6 @@ import {
     //styles
 import './css/pages.css';
 
-
-
 //COMPONENT
 class Contact extends Component {
     constructor(props) {

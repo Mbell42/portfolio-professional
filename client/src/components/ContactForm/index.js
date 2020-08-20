@@ -1,8 +1,7 @@
 //DEPENDENCIES
-import React from "react";
+import React, { Component } from "react";
 import axios from "axios";
     //components
-import BgImage from "../components/BgImage";
 import { 
     MDBContainer,
     MDBRow,
@@ -13,7 +12,7 @@ import {
     MDBBtn,
     MDBInput } from "mdbreact";
     //styles
-import '../pages/css/pages.css';
+import '../../pages/css/pages.css';
 
 //COMPONENT
 class ContactForm extends Component {
@@ -54,8 +53,7 @@ class ContactForm extends Component {
 //RENDER
     render() {
         return (
-            {/* Form Section */}
-            <div>
+            <>
             <MDBCol lg="5" className="lg-0 mb-4">
                 <MDBCard>
                     {/* Form Header */}
@@ -126,6 +124,7 @@ class ContactForm extends Component {
                     </MDBCardBody>
                 </MDBCard>
             </MDBCol>
+            </>
         );
     }  
     onNameChange(event) {
