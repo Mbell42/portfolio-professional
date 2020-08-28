@@ -4,6 +4,7 @@ import axios from "axios";
     //components
 import BgImage from "../components/BgImage";
 import ContactForm from "../components/ContactForm";
+import Map from "../components/Map";
 import { 
     MDBContainer,
     MDBRow,
@@ -74,7 +75,8 @@ class Contact extends Component {
                                     {/* Form Section */}
                                     <ContactForm></ContactForm>
                                     {/* Map Section */}
-                                    <MDBCol lg="7">
+                                    <Map></Map>
+                                    {/* <MDBCol lg="7">
                                         <div
                                         id="map-container"
                                         className="rounded z-depth-1-half map-container"
@@ -90,7 +92,7 @@ class Contact extends Component {
                                         />
                                         </div>
                                         <br />
-                                        {/* Location Details */}
+                                        
                                         <MDBRow className="text-center">
                                         <MDBCol md="4">
                                             <MDBBtn tag="a" color="indigo" className="accent-1">
@@ -114,7 +116,7 @@ class Contact extends Component {
                                             
                                         </MDBCol>
                                         </MDBRow>
-                                    </MDBCol>
+                                    </MDBCol>  */}
                                 </MDBRow>
                             </MDBCol>
                         </MDBRow>
