@@ -29,7 +29,9 @@ const About = () => {
                 <hr className='hr-light my-4' />
                 <MDBCol md='8' className='mb-4 float-left white-text text-center'>
                   <h4 className='text-uppercase mb-4 white-text '>
-                      <strong>Web Design and VFX</strong>
+                      <strong>
+                        Web Design and VFX
+                      </strong>
                   </h4>
                   <p>
                     I am a Full Stack Web Developer with a background in 3D Animation and VFX 

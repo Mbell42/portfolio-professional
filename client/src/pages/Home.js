@@ -22,14 +22,18 @@ const Home = () => {
         <BgImage>
           <MDBContainer className='mainContainer d-flex justify-content-center align-items-center'>
             <MDBRow>
-                {/* Left column will contain intro header, text, and call to action */}
-                <MDBCol md='8' className='mb-4 white-text text-center'>
-                    <h1 className='h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 '>
-                        Matthew Bell
-                    </h1>
-                    <hr className='hr-light my-4' />
+              {/* Main center column will contain intro header */}
+              <MDBCol md='12' className='mb-4 white-text text-center'>
+                <h1 className='h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 '>
+                  Matthew Bell
+                </h1>
+                <hr className='hr-light my-4' />
+                {/* Left Column will contain intro text and calls to action. */}
+                <MDBCol md='8' className='mb-4 white-text text-center float-left'>
                     <h4 className='text-uppercase mb-4 white-text '>
-                        <strong>Web Design and VFX</strong>
+                        <strong>
+                          Web Design and VFX
+                        </strong>
                     </h4>
                     <p>
                       Full Stack Web Developer with a background in 3D Animation and VFX 
@@ -42,10 +46,10 @@ const Home = () => {
                     
                 </MDBCol>
                 {/* Right Column will contain image */}
-                <MDBCol md='4' className='mb-4'>
-                    {/* <h5 className="white-text text-center">Image Here</h5> */}
-                    <img src={mbSquare} alt="Matthew Bell" className="img-fluid rounded" />
+                <MDBCol md='4' className='mb-4 float-right'>
+                    <img src={mbSquare} alt="Matthew Bell" className="img-fluid rounded-circle" />
                 </MDBCol>
+            </MDBCol>
             </MDBRow>
           </MDBContainer>
           </BgImage>

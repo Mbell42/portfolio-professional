@@ -16,7 +16,7 @@ const GalleryVFX = () => {
         return (
             <div className='pageContainer'>
             <BgImage>
-            <MDBContainer className="mainContainer mainContainer d-flex justify-content-center align-items-center">
+            <MDBContainer className="mainContainer d-flex justify-content-center align-items-center">
                 <MDBRow>
                     {/* Main column will contain about header, text, and calls to action */}
                     <MDBCol md='12' className='mb-4 white-text text-center'>
