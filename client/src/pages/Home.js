@@ -41,6 +41,7 @@ const Home = () => {
                       I learn new skills quickly, with the ability to pivot and take on new 
                       challenges. I am seeking a transition into Web and Software Development.
                     </p>
+                    {/* Call to Action */}
                     <a href="/about" className="white-text py-3"><MDBBtn gradient="peach">Read More</MDBBtn></a>
                     <a href="/contact" className="white-text"><MDBBtn gradient="purple">Contact Me</MDBBtn></a>
                     

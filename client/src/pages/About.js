@@ -47,9 +47,10 @@ const About = () => {
                     for the creation of solutions to new and difficult problems, and where the combined 
                     value of the product is increased beyond the sum of its parts.
                   </p>
+                  {/* Call to Action */}
                   <a href="/contact" className="white-text"><MDBBtn gradient="purple">Contact Me</MDBBtn></a>
-                <a href="/gallery_code" className="white-text"><MDBBtn gradient="peach">Web Development Gallery</MDBBtn></a>
-                <a href="/gallery_vfx" className="white-text"><MDBBtn gradient="peach">VFX Gallery</MDBBtn></a>
+                  <a href="/gallery_code" className="white-text"><MDBBtn gradient="peach">Web Development Gallery</MDBBtn></a>
+                  <a href="/gallery_vfx" className="white-text"><MDBBtn gradient="peach">VFX Gallery</MDBBtn></a>
                 </MDBCol>
                 {/* Right Column will contain image */}
                 <MDBCol md='4' className='float-right'>
