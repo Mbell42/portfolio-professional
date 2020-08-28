@@ -17,13 +17,13 @@ app.use("/", router);
 
 app.use(cors());
 
-// For local testing
+// For local contactForm testing
 // const mailTo = creds.MAILGUN_TO;
 // const mailFrom = creds.MAILGUN_FROM;
 // const mailKey = creds.MAILGUN_KEY;
 // const mailDomain = creds.MY_DOMAIN;
 
-// for use with Heorku
+// for contactForm testing with Heorku
 const mailTo = process.env.MAILGUN_TO;
 const mailFrom = process.env.MAILGUN_FROM;
 const mailKey = process.env.MAILGUN_KEY;
