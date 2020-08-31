@@ -6,11 +6,9 @@ import {
     MDBContainer,
     MDBRow,
     MDBCol,
-    MDBCard,
-    MDBCardBody,
     MDBIcon,
-    MDBBtn,
-    MDBInput } from "mdbreact";
+    MDBBtn
+    } from "mdbreact";
     //styles
 import '../../pages/css/pages.css';
 

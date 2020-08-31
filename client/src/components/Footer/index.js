@@ -1,7 +1,11 @@
 //DEPENDENCIES
 import React from "react";
   //components
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { MDBCol,
+  MDBContainer,
+  MDBRow,
+  MDBFooter
+} from "mdbreact";
 
 //COMPONENT
 const Footer = () => {

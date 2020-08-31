@@ -2,8 +2,17 @@
 import React, { Component } from "react";
   //components
 import {
-MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse,
-MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem
 } from "mdbreact";
   //router
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
