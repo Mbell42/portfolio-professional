@@ -2,7 +2,15 @@
 import React from "react";
     //components
 import BgImage from "../components/BgImage";
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardTitle, MDBCardImage, MDBCardBody, MDBCardText, MDBView, MDBMask } from "mdbreact";
+import { MDBContainer,
+    MDBRow,
+    MDBCol,
+    MDBCard,
+    MDBCardTitle,
+    MDBCardImage,
+    MDBCardBody,
+    MDBCardText
+} from "mdbreact";
     //styles
 import './css/pages.css';
     //images

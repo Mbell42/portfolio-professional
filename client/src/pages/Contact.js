@@ -1,6 +1,6 @@
 //DEPENDENCIES
 import React, { Component } from "react";
-import axios from "axios";
+// import axios from "axios";
     //components
 import BgImage from "../components/BgImage";
 import ContactForm from "../components/ContactForm";
@@ -9,11 +9,7 @@ import {
     MDBContainer,
     MDBRow,
     MDBCol,
-    MDBCard,
-    MDBCardBody,
-    MDBIcon,
-    MDBBtn,
-    MDBInput } from "mdbreact";
+} from "mdbreact";
     //styles
 import './css/pages.css';
 
