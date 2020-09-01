@@ -5,11 +5,7 @@ import BgImage from "../components/BgImage";
 import { MDBContainer,
     MDBRow,
     MDBCol,
-    MDBCard,
-    MDBCardTitle,
-    MDBCardImage,
     MDBCardBody,
-    MDBCardText
 } from "mdbreact";
     //styles
 import './css/pages.css';
