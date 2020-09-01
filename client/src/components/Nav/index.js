@@ -23,7 +23,7 @@ import Contact from "../../pages/Contact";
 import GalleryCode from "../../pages/GalleryCode";
 import GalleryVFX from "../../pages/GalleryVFX";
   //pdf
-import Resume from "../../pages/MattBell-Resume_2020-07-16.pdf";
+import Resume from "../../pages/MattBell-Resume.pdf";
 
 //COMPONENT
 class Nav extends Component {
