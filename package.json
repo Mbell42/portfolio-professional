@@ -1,5 +1,6 @@
 {
   "name": "mb-portfolio",
+  "homepage": "https://matthewgbell-portfolio.com",
   "version": "1.0.0",
   "description": "Matthew bell's professional portfolio using NodeJS, Express, React, and MDBReact.",
   "engines": {
