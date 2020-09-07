@@ -112,7 +112,7 @@ const GalleryVFX = () => {
                                     </MDBCardBody>
                                 </MDBCol>
 
-                                <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/generator-pw-random" target={"blank"}>
                                         <img
                                             src={randomPwGen}
@@ -120,7 +120,7 @@ const GalleryVFX = () => {
                                             className="img-fluid rounded z-depth-2"
                                         />
                                     </a>
-                                    {/* <MDBCardBody className="pb-0 mb-3">
+                                    <MDBCardBody className="pb-0 mb-3">
                                         <h4 className="font-weight-bold my-2">Random Password Generator</h4>
                                         <p className="white-text mb-5">
                                             This is my third homework project. I Created a simple random password generator 
