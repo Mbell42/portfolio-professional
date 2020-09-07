@@ -46,7 +46,7 @@ const GalleryVFX = () => {
                                     </a>
                                     
                                     <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-2">School Project 1 - CurrencyExchangePro</h4>
+                                        <h4 className="font-weight-bold my-2">CurrencyExchangePro App</h4>
                                         <p className="white-text mb-5">
                                             This is my first group project for class.  My team built a 
                                             currency-app that can convert any currency into another 
@@ -103,7 +103,7 @@ const GalleryVFX = () => {
                                         />
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">School Project 2 - Minute Page</h4>
+                                        <h4 className="font-weight-bold my-2">MinutePage App</h4>
                                         <p className="white-text mb-5">
                                             This is the second group project for my class. My Team created a landing page 
                                             generator using NodeJs, Express, and MySQL.  Users can login, and quickly 
@@ -120,14 +120,14 @@ const GalleryVFX = () => {
                                             className="img-fluid rounded z-depth-2"
                                         />
                                     </a>
-                                    <MDBCardBody className="pb-0 mb-3">
+                                    {/* <MDBCardBody className="pb-0 mb-3">
                                         <h4 className="font-weight-bold my-2">Random Password Generator</h4>
                                         <p className="white-text mb-5">
                                             This is my third homework project. I Created a simple random password generator 
                                             that allows the user to save the created password to their clipboard.
                                         </p>
                                     </MDBCardBody>
-                                </MDBCol>
+                                </MDBCol> */}
                                     
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/10_TemplateEngine-EmployeeSummary" target={"blank"}>
