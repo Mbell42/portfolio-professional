@@ -1,14 +1,12 @@
 //DEPENDENCIES
 import React from "react";
-import axios from "axios";
     //components
 import { 
-    MDBContainer,
     MDBRow,
     MDBCol,
     MDBIcon,
     MDBBtn
-    } from "mdbreact";
+} from "mdbreact";
     //styles
 import '../../pages/css/pages.css';
 

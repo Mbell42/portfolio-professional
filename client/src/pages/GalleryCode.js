@@ -15,7 +15,7 @@ import dayScheduler from "../images/projects/code/day-scheduler-square.png";
 import employeeSummary from "../images/projects/code/employee-summary-square.png";
 import minutePage from "../images/projects/code/project2_minute-page-square.jpg";
 import weatherDashboard from "../images/projects/code/weather-dashboard-square.png";
-import randomPwGen from "../images/projects/code/randomPwGen-square.png";
+// import randomPwGen from "../images/projects/code/randomPwGen-square.png";
 
 //PAGE
 const GalleryVFX = () => {
