@@ -128,7 +128,24 @@ const GalleryVFX = () => {
                                         </p>
                                     </MDBCardBody>
                                 </MDBCol> */}
-                                    
+
+                                 {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                    <a href="https://github.com/Mbell42/steadfast" target={"blank"}>
+                                        <img
+                                            src={randomPwGen}
+                                            alt="Steadfast"
+                                            className="img-fluid rounded z-depth-2"
+                                        />
+                                    </a>
+                                    <MDBCardBody className="pb-0 mb-3">
+                                        <h4 className="font-weight-bold my-2">Random Password Generator</h4>
+                                        <p className="white-text mb-5">
+                                            This is my third homework project. I Created a simple random password generator 
+                                            that allows the user to save the created password to their clipboard.
+                                        </p>
+                                    </MDBCardBody>
+                                </MDBCol> */}
+
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/10_TemplateEngine-EmployeeSummary" target={"blank"}>
                                         <img
