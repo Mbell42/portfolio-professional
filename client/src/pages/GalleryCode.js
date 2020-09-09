@@ -112,36 +112,18 @@ const GalleryVFX = () => {
                                     </MDBCardBody>
                                 </MDBCol>
 
-                                {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/generator-pw-random" target={"blank"}>
-                                        <img
-                                            src={randomPwGen}
-                                            alt="Random Password Generator"
-                                            className="img-fluid rounded z-depth-2"
-                                        />
-                                    </a>
-                                    <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">Random Password Generator</h4>
-                                        <p className="white-text mb-5">
-                                            This is my third homework project. I Created a simple random password generator 
-                                            that allows the user to save the created password to their clipboard.
-                                        </p>
-                                    </MDBCardBody>
-                                </MDBCol> */}
-
                                  {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/steadfast" target={"blank"}>
                                         <img
-                                            src={randomPwGen}
+                                            src={steadfast}
                                             alt="Steadfast"
                                             className="img-fluid rounded z-depth-2"
                                         />
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">Random Password Generator</h4>
+                                        <h4 className="font-weight-bold my-2">Steadfast</h4>
                                         <p className="white-text mb-5">
-                                            This is my third homework project. I Created a simple random password generator 
-                                            that allows the user to save the created password to their clipboard.
+                                            This is my third group project. We created a landing page generator and basic customer management system.  I worked with others to create the authentication system and front-end design, and designed the logo.
                                         </p>
                                     </MDBCardBody>
                                 </MDBCol> */}
