@@ -13,7 +13,7 @@ import './css/pages.css';
     //images
 import currencyApp from "../images/projects/code/currencyAppSquare.png";
 import dayScheduler from "../images/projects/code/day-scheduler-square.png";
-import employeeSummary from "../images/projects/code/employee-summary-square.png";
+import employeeDirectory from "../images/projects/code/employee-directory-square.png";
 import minutePage from "../images/projects/code/project2_minute-page-square.jpg";
 import weatherDashboard from "../images/projects/code/weather-dashboard-square.png";
 import steadFast from "../images/projects/code/steadfast-logo-square.png";
@@ -58,7 +58,7 @@ const GalleryVFX = () => {
                                     </MDBCardBody>
                                 </MDBCol>
 
-                                <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/06_weather-dashboard" target={"blank"}>
                                         <img
                                             src={weatherDashboard}
@@ -76,9 +76,9 @@ const GalleryVFX = () => {
                                         </p>
                                         <a href="https://github.com/Mbell42/06_weather-dashboard" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
-                                </MDBCol>
+                                </MDBCol> */}
 
-                                <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/05_work-day-scheduler" target={"blank"}>
                                         <img
                                             src={dayScheduler}
@@ -96,7 +96,7 @@ const GalleryVFX = () => {
                                         </p>
                                         <a href="https://github.com/Mbell42/05_work-day-scheduler" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
-                                </MDBCol>
+                                </MDBCol> */}
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/project2" target={"blank"}>
@@ -137,23 +137,24 @@ const GalleryVFX = () => {
                                 </MDBCol>
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/10_TemplateEngine-EmployeeSummary" target={"blank"}>
+                                    <a href="https://react-employee-directory-hw-19.herokuapp.com/" target={"blank"}>
                                         <img
-                                            src={employeeSummary}
-                                            alt="Emplyee Summary"
+                                            src={employeeDirectory}
+                                            alt="Employee Directory"
                                             className="img-fluid rounded z-depth-2"
                                         /> 
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">TemplateEngine-EmployeeSummary</h4>
+                                        <h4 className="font-weight-bold my-2">Employee Directory</h4>
                                         <p className="white-text mb-5">
-                                            This is my tenth homework project.  I Created a a Node CLI that takes 
-                                            in information about employees and generates an HTML webpage that 
-                                            displays summaries for each person.
+                                            This is my 19th homework project.  I built a sample employee directory that allows a 
+                                            user to generate a set number of random employees, and then to search for them by multiple
+                                            column criteria, or reset the random generation for a new set of random eployees.
                                         </p>
-                                        <a href="https://github.com/Mbell42/10_TemplateEngine-EmployeeSummary" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/19_react_employee-directory" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
+
                             </MDBRow>
                         </MDBCol>
                     </MDBRow>
