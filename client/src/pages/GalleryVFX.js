@@ -30,7 +30,7 @@ const GalleryVFX = () => {
                         </h1>
                         <hr className='hr-light my-4' />
                         <h5 className="white-text  font-weight-bold w-responsive mx-auto mb-5">
-                            Some of the best VFX projects I have had the pleasure to take part in.  Click the images to view the projects.
+                            Some of the best VFX projects I have had the pleasure to take part in.  Click the images to view the project IMDB pages.
                         </h5>
 
                         <MDBRow className="text-center">
@@ -40,12 +40,12 @@ const GalleryVFX = () => {
                                     <img
                                         src={antman}
                                         alt=""
-                                        className="img-fluid rounded z-depth-3"
+                                        className="img-fluid rounded z-depth-3 projectImage"
                                     />
                                 </a>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-2">Antman (2015)</h4>
-                                    <p className="white-text mb-5">
+                                    <p className="white-text mb-2">
                                         Provided VFX and Stereoscopic VFX compositing for 2D and 3D. 
                                     </p>
                                 </MDBCardBody>
@@ -57,12 +57,12 @@ const GalleryVFX = () => {
                                     <img
                                         src={poltergeist}
                                         alt=""
-                                        className="img-fluid rounded z-depth-3"
+                                        className="img-fluid rounded z-depth-3 projectImage"
                                     />
                                 </a>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-2">Poltergeist<br />(2016)</h4>
-                                    <p className="white-text mb-5">
+                                    <p className="white-text mb-2">
                                         Provided VFX and Stereoscopic VFX compositing for 2D and 3D. 
                                     </p>
                                 </MDBCardBody>
@@ -73,12 +73,12 @@ const GalleryVFX = () => {
                                     <img
                                         src={insurgent}
                                         alt=""
-                                        className="img-fluid rounded z-depth-3"
+                                        className="img-fluid rounded z-depth-3 projectImage"
                                     />
                                 </a>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-2">Divergent Series: Insurgent (2015)</h4>
-                                    <p className="white-text mb-5">
+                                    <p className="white-text mb-2">
                                         Provided VFX and Stereoscopic VFX compositing for 2D and 3D. 
                                     </p>
                                 </MDBCardBody>
@@ -89,12 +89,12 @@ const GalleryVFX = () => {
                                     <img
                                         src={theWalk}
                                         alt=""
-                                        className="img-fluid rounded z-depth-3"
+                                        className="img-fluid rounded z-depth-3 projectImage"
                                     />
                                 </a>
                                 <MDBCardBody className="pb-0">
                                     <h4 className="font-weight-bold my-2">The Walk<br />(2015)</h4>
-                                    <p className="white-text mb-5">
+                                    <p className="white-text mb-2">
                                         Provided VFX and Stereoscopic VFX compositing for 2D and 3D. 
                                     </p>
                                 </MDBCardBody>
