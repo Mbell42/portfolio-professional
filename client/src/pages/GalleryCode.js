@@ -12,10 +12,10 @@ import { MDBContainer,
 import './css/pages.css';
     //images
 import currencyApp from "../images/projects/code/currencyAppSquare.png";
-import dayScheduler from "../images/projects/code/day-scheduler-square.png";
+import fitnessTracker from "../images/projects/code/fitness-tracker-square.png";
 import employeeDirectory from "../images/projects/code/employee-directory-square.png";
 import minutePage from "../images/projects/code/project2_minute-page-square.jpg";
-import weatherDashboard from "../images/projects/code/weather-dashboard-square.png";
+import budgetTracker from "../images/projects/code/budget-tracker-square.png";
 import steadFast from "../images/projects/code/steadfast-logo-square.png";
 
 //PAGE
@@ -33,7 +33,7 @@ const GalleryVFX = () => {
                             </h1>
                             <hr className='hr-light my-4' />
                             <h5 className="white-text font-weight-bold w-responsive mx-auto mb-5">
-                                A collection of my past projects, including school projects.  Click the images to view the projects.
+                                A collection of my past projects, including school projects.  Click the images to view the deployed projects.
                             </h5>
 
                             <MDBRow className="text-center flex-row">
@@ -42,78 +42,77 @@ const GalleryVFX = () => {
                                         <img
                                             src={currencyApp}
                                             alt="Currency App"
-                                            className="img-fluid rounded z-depth-2"
+                                            className="img-fluid rounded z-depth-2 projectImage"
                                         /> 
                                     </a>
                                     
                                     <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-2">CurrencyExchangePro <br />App</h4>
-                                        <p className="white-text mb-5">
+                                        <h4 className="font-weight-bold my-2">CurrencyExchangePro<br />App</h4>
+                                        <p className="white-text mb-2">
                                             This is my first group project.  My team built a 
                                             currency-app that can convert any currency into another 
                                             currency, store/display your search history, and send a 
                                             text message of the most recent search details.
                                         </p>
-                                        <a href="https://github.com/Mbell42/07_project-01" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/07_project-01" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
-                                {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/06_weather-dashboard" target={"blank"}>
+                                <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                    <a href="https://arcane-journey-09301.herokuapp.com/?id=5ee2c802a334a900178b4f64" target={"blank"}>
                                         <img
-                                            src={weatherDashboard}
-                                            alt="Weather Dashboard"
-                                            className="img-fluid rounded z-depth-2"
+                                            src={fitnessTracker}
+                                            alt="Fitness Tracker"
+                                            className="img-fluid rounded z-depth-2 projectImage"
                                         /> 
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">Weather<br />Dashboard</h4>
-                                        <p className="white-text mb-5">
-                                            This is my sixth homework project.  I made a weather dashboard 
-                                            that will display current and forecast weather data using API 
-                                            requests.  The current weather data is displayed in the top right, 
-                                            and the forecast data for five days is shown below.
+                                        <h4 className="font-weight-bold my-2">Fitness<br />Tracker</h4>
+                                        <p className="white-text mb-2">
+                                            This is my 17th homework project.  Workout tracker that will allow a user to create, view, and track their daily workouts.
+                                            It uses a Mongo database with a Mongoose schema and model, and will handle routes using Express.
+                                            
                                         </p>
-                                        <a href="https://github.com/Mbell42/06_weather-dashboard" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/17_Workout-Tracker" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
-                                </MDBCol> */}
+                                </MDBCol>
 
-                                {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/05_work-day-scheduler" target={"blank"}>
+                                <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                    <a href="https://blooming-beyond-15629.herokuapp.com/" target={"blank"}>
                                         <img
-                                            src={dayScheduler}
-                                            alt="Day Scheduler"
-                                            className="img-fluid rounded z-depth-2"
+                                            src={budgetTracker}
+                                            alt="Budget Tracker"
+                                            className="img-fluid rounded z-depth-2 projectImage"
                                         />
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">Work Day<br />Scheduler</h4>
-                                        <p className="white-text mb-5">
-                                            This is my fifth homework project. I Created a simple calendar 
-                                            application that allows the user to save events for each hour 
-                                            of the day. This app will run in the browser and feature dynamically 
-                                            updated HTML and CSS powered by jQuery.
+                                        <h4 className="font-weight-bold my-2">Budget<br />Tracker</h4>
+                                        <p className="white-text mb-2">
+                                            This is my 18th homework project.  Budget Tracker application that has offline access and functionality.
+                                            A user can add expenses or deposits to their budget even if offline.
+                                            Transactions made offline should populate to the total when brought back online.
+                                            
                                         </p>
-                                        <a href="https://github.com/Mbell42/05_work-day-scheduler" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/18_pwa_budget-tracker" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
-                                </MDBCol> */}
+                                </MDBCol>
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/project2" target={"blank"}>
                                         <img
                                             src={minutePage}
                                             alt="Minute Page"
-                                            className="img-fluid rounded z-depth-2"
+                                            className="img-fluid rounded z-depth-2 projectImage"
                                         />
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
                                         <h4 className="font-weight-bold my-2">MinutePage<br />App</h4>
-                                        <p className="white-text mb-5">
-                                            This is the second group project. My Team created a landing page 
+                                        <p className="white-text mb-2">
+                                            This is the second group project. I worked with 3 others to create a landing page 
                                             generator using NodeJs, Express, and MySQL.  Users can login, and quickly 
                                             create landing pages that are bound to their user account.
                                         </p>
-                                        <a href="https://github.com/Mbell42/project2" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/project2" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -122,17 +121,17 @@ const GalleryVFX = () => {
                                         <img
                                             src={steadFast}
                                             alt="Steadfast"
-                                            className="img-fluid rounded z-depth-2"
+                                            className="img-fluid rounded z-depth-2 projectImage"
                                         />
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
                                         <h4 className="font-weight-bold my-2">Steadfast<br></br>App</h4>
-                                        <p className="white-text mb-5">
+                                        <p className="white-text mb-2">
                                             This is my third group project. We created a landing page generator
-                                            and basic customer management system.  I worked with others to create
+                                            that uses a basic customer management system.  I worked with 3 others to create
                                             the authentication system and front-end design, and designed the logo.
                                         </p>
-                                        <a href="https://github.com/Mbell42/steadfast" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/steadfast" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -141,17 +140,17 @@ const GalleryVFX = () => {
                                         <img
                                             src={employeeDirectory}
                                             alt="Employee Directory"
-                                            className="img-fluid rounded z-depth-2"
+                                            className="img-fluid rounded z-depth-2 projectImage"
                                         /> 
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">Employee Directory</h4>
-                                        <p className="white-text mb-5">
-                                            This is my 19th homework project.  I built a sample employee directory that allows a 
+                                        <h4 className="font-weight-bold my-2">Employee<br />Directory</h4>
+                                        <p className="white-text mb-2">
+                                            This is my 19th homework project.  A sample employee directory that allows a 
                                             user to generate a set number of random employees, and then to search for them by multiple
-                                            column criteria, or reset the random generation for a new set of random eployees.
+                                            column criteria, or reset the random generation for a new set of eployees.
                                         </p>
-                                        <a href="https://github.com/Mbell42/19_react_employee-directory" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/19_react_employee-directory" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
