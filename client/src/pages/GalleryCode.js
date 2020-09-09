@@ -5,6 +5,7 @@ import BgImage from "../components/BgImage";
 import { MDBContainer,
     MDBRow,
     MDBCol,
+    MDBBtn,
     MDBCardBody,
 } from "mdbreact";
     //styles
@@ -24,7 +25,7 @@ const GalleryVFX = () => {
                 <BgImage>
                 <MDBContainer className="mainContainer d-flex justify-content-center align-items-center">
                     <MDBRow>
-                        {/* Main column will contain about header, text, and calls to action */}
+                        {/* Main column will contain about header, projects, descriptions, and calls to action */}
                         <MDBCol md='12' className='mb-4 white-text text-center'>
                     
                             <h1 className="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5">
@@ -32,7 +33,7 @@ const GalleryVFX = () => {
                             </h1>
                             <hr className='hr-light my-4' />
                             <h5 className="white-text font-weight-bold w-responsive mx-auto mb-5">
-                                A collection of my past projects, including school projects.  Click the images to view the projects
+                                A collection of my past projects, including school projects.  Click the images to view the projects.
                             </h5>
 
                             <MDBRow className="text-center flex-row">
@@ -46,13 +47,14 @@ const GalleryVFX = () => {
                                     </a>
                                     
                                     <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-2">CurrencyExchangePro App</h4>
+                                        <h4 className="font-weight-bold my-2">CurrencyExchangePro <br />App</h4>
                                         <p className="white-text mb-5">
                                             This is my first group project.  My team built a 
                                             currency-app that can convert any currency into another 
                                             currency, store/display your search history, and send a 
                                             text message of the most recent search details.
                                         </p>
+                                        <a href="https://github.com/Mbell42/07_project-01" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -72,6 +74,7 @@ const GalleryVFX = () => {
                                             requests.  The current weather data is displayed in the top right, 
                                             and the forecast data for five days is shown below.
                                         </p>
+                                        <a href="https://github.com/Mbell42/06_weather-dashboard" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -91,6 +94,7 @@ const GalleryVFX = () => {
                                             of the day. This app will run in the browser and feature dynamically 
                                             updated HTML and CSS powered by jQuery.
                                         </p>
+                                        <a href="https://github.com/Mbell42/05_work-day-scheduler" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -103,12 +107,13 @@ const GalleryVFX = () => {
                                         />
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">MinutePage App</h4>
+                                        <h4 className="font-weight-bold my-2">MinutePage<br />App</h4>
                                         <p className="white-text mb-5">
                                             This is the second group project. My Team created a landing page 
                                             generator using NodeJs, Express, and MySQL.  Users can login, and quickly 
                                             create landing pages that are bound to their user account.
                                         </p>
+                                        <a href="https://github.com/Mbell42/project2" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -121,12 +126,13 @@ const GalleryVFX = () => {
                                         />
                                     </a>
                                     <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">Steadfast</h4>
+                                        <h4 className="font-weight-bold my-2">Steadfast<br></br>App</h4>
                                         <p className="white-text mb-5">
                                             This is my third group project. We created a landing page generator
                                             and basic customer management system.  I worked with others to create
                                             the authentication system and front-end design, and designed the logo.
                                         </p>
+                                        <a href="https://github.com/Mbell42/steadfast" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -145,6 +151,7 @@ const GalleryVFX = () => {
                                             in information about employees and generates an HTML webpage that 
                                             displays summaries for each person.
                                         </p>
+                                        <a href="https://github.com/Mbell42/10_TemplateEngine-EmployeeSummary" target={"blank"}><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
                             </MDBRow>

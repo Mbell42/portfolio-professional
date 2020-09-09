@@ -23,14 +23,14 @@ const GalleryVFX = () => {
             <BgImage>
             <MDBContainer className="mainContainer d-flex justify-content-center align-items-center">
                 <MDBRow>
-                    {/* Main column will contain about header, text, and calls to action */}
+                    {/* Main column will contain about header, projects, descriptions, and calls to action */}
                     <MDBCol md='12' className='mb-4 white-text text-center'>
                         <h1 className="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5">
                             VFX Gallery
                         </h1>
                         <hr className='hr-light my-4' />
                         <h5 className="white-text  font-weight-bold w-responsive mx-auto mb-5">
-                            Some of the best VFX projects I have had the pleasure to take part in.  Click the images to view the projects
+                            Some of the best VFX projects I have had the pleasure to take part in.  Click the images to view the projects.
                         </h5>
 
                         <MDBRow className="text-center">
