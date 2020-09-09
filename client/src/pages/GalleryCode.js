@@ -15,7 +15,7 @@ import dayScheduler from "../images/projects/code/day-scheduler-square.png";
 import employeeSummary from "../images/projects/code/employee-summary-square.png";
 import minutePage from "../images/projects/code/project2_minute-page-square.jpg";
 import weatherDashboard from "../images/projects/code/weather-dashboard-square.png";
-// import randomPwGen from "../images/projects/code/randomPwGen-square.png";
+import steadFast from "../images/projects/code/steadfast-logo-square.png";
 
 //PAGE
 const GalleryVFX = () => {
@@ -48,7 +48,7 @@ const GalleryVFX = () => {
                                     <MDBCardBody className="pb-0">
                                         <h4 className="font-weight-bold my-2">CurrencyExchangePro App</h4>
                                         <p className="white-text mb-5">
-                                            This is my first group project for class.  My team built a 
+                                            This is my first group project.  My team built a 
                                             currency-app that can convert any currency into another 
                                             currency, store/display your search history, and send a 
                                             text message of the most recent search details.
@@ -105,17 +105,17 @@ const GalleryVFX = () => {
                                     <MDBCardBody className="pb-0 mb-3">
                                         <h4 className="font-weight-bold my-2">MinutePage App</h4>
                                         <p className="white-text mb-5">
-                                            This is the second group project for my class. My Team created a landing page 
+                                            This is the second group project. My Team created a landing page 
                                             generator using NodeJs, Express, and MySQL.  Users can login, and quickly 
                                             create landing pages that are bound to their user account.
                                         </p>
                                     </MDBCardBody>
                                 </MDBCol>
 
-                                 {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/steadfast" target={"blank"}>
                                         <img
-                                            src={steadfast}
+                                            src={steadFast}
                                             alt="Steadfast"
                                             className="img-fluid rounded z-depth-2"
                                         />
@@ -123,10 +123,12 @@ const GalleryVFX = () => {
                                     <MDBCardBody className="pb-0 mb-3">
                                         <h4 className="font-weight-bold my-2">Steadfast</h4>
                                         <p className="white-text mb-5">
-                                            This is my third group project. We created a landing page generator and basic customer management system.  I worked with others to create the authentication system and front-end design, and designed the logo.
+                                            This is my third group project. We created a landing page generator
+                                            and basic customer management system.  I worked with others to create
+                                            the authentication system and front-end design, and designed the logo.
                                         </p>
                                     </MDBCardBody>
-                                </MDBCol> */}
+                                </MDBCol>
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://github.com/Mbell42/10_TemplateEngine-EmployeeSummary" target={"blank"}>
