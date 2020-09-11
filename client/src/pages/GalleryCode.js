@@ -38,26 +38,44 @@ const GalleryVFX = () => {
 
                             {/* Projects Section */}
                             <MDBRow className="text-center flex-row">
+
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/currencyExchangePro-school" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
                                         <img
-                                            src={currencyApp}
-                                            alt="Currency App"
+                                            src={steadFast}
+                                            alt="Steadfast"
+                                            className="img-fluid rounded z-depth-2 projectImage"
+                                        />
+                                    </a>
+                                    <MDBCardBody className="pb-0 mb-3">
+                                        <h4 className="font-weight-bold my-2">Steadfast<br></br>App</h4>
+                                        <p className="white-text mb-2">
+                                            This is my third group project. We created a landing page generator
+                                            that uses a basic customer management system.  I worked with 3 others to create
+                                            the authentication system and front-end design, and designed the logo.
+                                        </p>
+                                        <a href="https://github.com/Mbell42/steadfast-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                    </MDBCardBody>
+                                </MDBCol>
+
+                                <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                                    <a href="https://react-employee-directory-hw-19.herokuapp.com/" target={"blank"}>
+                                        <img
+                                            src={employeeDirectory}
+                                            alt="Employee Directory"
                                             className="img-fluid rounded z-depth-2 projectImage"
                                         /> 
                                     </a>
-                                    
-                                    <MDBCardBody className="pb-0">
-                                        <h4 className="font-weight-bold my-2">CurrencyExchangePro<br />App</h4>
+                                    <MDBCardBody className="pb-0 mb-3">
+                                        <h4 className="font-weight-bold my-2">Employee<br />Directory</h4>
                                         <p className="white-text mb-2">
-                                            This is my first group project.  My team built a 
-                                            currency-app that can convert any currency into another 
-                                            currency, store/display your search history, and send a 
-                                            text message of the most recent search details.
+                                            This is my 19th homework project.  A sample employee directory that allows a 
+                                            user to generate a set number of random employees, and then to search for them by multiple
+                                            column criteria, or reset the random generation for a new set of eployees.
                                         </p>
-                                        <a href="https://github.com/Mbell42/currencyExchangePro-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/19_react_employee-directory" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
-                                </MDBCol>
+                                </MDBCol>                                
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                     <a href="https://arcane-journey-09301.herokuapp.com/?id=5ee2c802a334a900178b4f64" target={"blank"}>
@@ -117,43 +135,27 @@ const GalleryVFX = () => {
                                     </MDBCardBody>
                                 </MDBCol>
 
-                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
-                                        <img
-                                            src={steadFast}
-                                            alt="Steadfast"
-                                            className="img-fluid rounded z-depth-2 projectImage"
-                                        />
-                                    </a>
-                                    <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">Steadfast<br></br>App</h4>
-                                        <p className="white-text mb-2">
-                                            This is my third group project. We created a landing page generator
-                                            that uses a basic customer management system.  I worked with 3 others to create
-                                            the authentication system and front-end design, and designed the logo.
-                                        </p>
-                                        <a href="https://github.com/Mbell42/steadfast-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
-                                    </MDBCardBody>
-                                </MDBCol>
-
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://react-employee-directory-hw-19.herokuapp.com/" target={"blank"}>
+                                    <a href="https://github.com/Mbell42/currencyExchangePro-school" target="_blank" rel="noopener noreferrer">
                                         <img
-                                            src={employeeDirectory}
-                                            alt="Employee Directory"
+                                            src={currencyApp}
+                                            alt="Currency App"
                                             className="img-fluid rounded z-depth-2 projectImage"
                                         /> 
                                     </a>
-                                    <MDBCardBody className="pb-0 mb-3">
-                                        <h4 className="font-weight-bold my-2">Employee<br />Directory</h4>
+                                    
+                                    <MDBCardBody className="pb-0">
+                                        <h4 className="font-weight-bold my-2">CurrencyExchangePro<br />App</h4>
                                         <p className="white-text mb-2">
-                                            This is my 19th homework project.  A sample employee directory that allows a 
-                                            user to generate a set number of random employees, and then to search for them by multiple
-                                            column criteria, or reset the random generation for a new set of eployees.
+                                            This is my first group project.  My team built a 
+                                            currency-app that can convert any currency into another 
+                                            currency, store/display your search history, and send a 
+                                            text message of the most recent search details.
                                         </p>
-                                        <a href="https://github.com/Mbell42/19_react_employee-directory" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/currencyExchangePro-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
+
                             </MDBRow>
                             {/* End Projects Section */}
                         </MDBCol>
