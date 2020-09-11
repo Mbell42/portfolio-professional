@@ -36,9 +36,10 @@ const GalleryVFX = () => {
                                 A collection of my past projects, including school projects.  Click the images to view the deployed projects.
                             </h5>
 
+                            {/* Projects Section */}
                             <MDBRow className="text-center flex-row">
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/07_project-01" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://github.com/Mbell42/currencyExchangePro-school" target="_blank" rel="noopener noreferrer">
                                         <img
                                             src={currencyApp}
                                             alt="Currency App"
@@ -54,7 +55,7 @@ const GalleryVFX = () => {
                                             currency, store/display your search history, and send a 
                                             text message of the most recent search details.
                                         </p>
-                                        <a href="https://github.com/Mbell42/07_project-01" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/currencyExchangePro-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -98,7 +99,7 @@ const GalleryVFX = () => {
                                 </MDBCol>
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/project2" target={"blank"}>
+                                    <a href="https://github.com/Mbell42/minutepage-school" target={"blank"}>
                                         <img
                                             src={minutePage}
                                             alt="Minute Page"
@@ -112,12 +113,12 @@ const GalleryVFX = () => {
                                             generator using NodeJs, Express, and MySQL.  Users can login, and quickly 
                                             create landing pages that are bound to their user account.
                                         </p>
-                                        <a href="https://github.com/Mbell42/project2" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/minutepage-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
                                  <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/steadfast" target={"blank"}>
+                                    <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
                                         <img
                                             src={steadFast}
                                             alt="Steadfast"
@@ -131,7 +132,7 @@ const GalleryVFX = () => {
                                             that uses a basic customer management system.  I worked with 3 others to create
                                             the authentication system and front-end design, and designed the logo.
                                         </p>
-                                        <a href="https://github.com/Mbell42/steadfast" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                        <a href="https://github.com/Mbell42/steadfast-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
 
@@ -153,8 +154,8 @@ const GalleryVFX = () => {
                                         <a href="https://github.com/Mbell42/19_react_employee-directory" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                     </MDBCardBody>
                                 </MDBCol>
-
                             </MDBRow>
+                            {/* End Projects Section */}
                         </MDBCol>
                     </MDBRow>
                     

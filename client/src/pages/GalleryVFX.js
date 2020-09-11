@@ -33,6 +33,7 @@ const GalleryVFX = () => {
                             Some of the best VFX projects I have had the pleasure to take part in.  Click the images to view the project IMDB pages.
                         </h5>
 
+                        {/* Projects Section */}
                         <MDBRow className="text-center">
                             <MDBCol lg="3"></MDBCol>
                             <MDBCol lg="6" md="12" className="mb-lg-0 mb-4">
@@ -100,6 +101,8 @@ const GalleryVFX = () => {
                                 </MDBCardBody>
                             </MDBCol>
                         </MDBRow>
+                        {/* End Projects Section */}
+                        
                     </MDBCol>
                 </MDBRow>
                 
