@@ -117,7 +117,7 @@ const GalleryVFX = () => {
                                 </MDBCol>
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/minutepage-school" target={"blank"}>
+                                    <a href="https://minutepage-school.herokuapp.com/" target={"blank"}>
                                         <img
                                             src={minutePage}
                                             alt="Minute Page"
@@ -136,7 +136,7 @@ const GalleryVFX = () => {
                                 </MDBCol>
 
                                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                    <a href="https://github.com/Mbell42/currencyExchangePro-school" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://currencyapp-school.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                         <img
                                             src={currencyApp}
                                             alt="Currency App"

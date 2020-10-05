@@ -8,6 +8,10 @@ My full-stack professional portfolio website at matthewbell-portfolio.com.
 
 As a user, I want to have a professional portfolio that has an easily identifiable domain, is easy to navigate, and that includes a contact form that allows people to email me.
 
+## Deployed Site
+
+[Matthew Bell Portfolio](https://portfolio-mattbell.herokuapp.com/gallery_code "Deployed App on Heroku")
+
 ## Technology
 
 ### Front-End
