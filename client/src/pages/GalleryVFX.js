@@ -30,14 +30,14 @@ const GalleryVFX = () => {
                         </h1>
                         <hr className='hr-light my-4' />
                         <h5 className="white-text  font-weight-bold w-responsive mx-auto mb-5">
-                            Some of the best VFX projects I have had the pleasure to take part in.  Click the images to view the project IMDB pages.
+                            Some of the VFX projects I have had the pleasure to take part in.  Click the images to view my IMDB page, which includes my credits.
                         </h5>
 
                         {/* Projects Section */}
                         <MDBRow className="text-center">
                             <MDBCol lg="3"></MDBCol>
                             <MDBCol lg="6" md="12" className="mb-lg-0 mb-4">
-                                <a href="https://www.imdb.com/title/tt0478970/">     
+                                <a href="https://www.imdb.com/name/nm7347199/?ref_=ttfc_fc_cr429" target={"blank"}>     
                                     <img
                                         src={antman}
                                         alt=""
@@ -54,7 +54,7 @@ const GalleryVFX = () => {
                             <MDBCol lg="3"></MDBCol>
 
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <a href="https://www.imdb.com/title/tt1029360/">
+                                <a href="https://www.imdb.com/name/nm7347199/?ref_=ttfc_fc_cr429" target={"blank"}>
                                     <img
                                         src={poltergeist}
                                         alt=""
@@ -70,7 +70,7 @@ const GalleryVFX = () => {
                             </MDBCol>
 
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <a href="https://www.imdb.com/title/tt2908446/">
+                                <a href="https://www.imdb.com/name/nm7347199/?ref_=ttfc_fc_cr429" target={"blank"}>
                                     <img
                                         src={insurgent}
                                         alt=""
@@ -86,7 +86,7 @@ const GalleryVFX = () => {
                             </MDBCol>
 
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <a href="https://www.imdb.com/title/tt3488710/"> 
+                                <a href="https://www.imdb.com/name/nm7347199/?ref_=ttfc_fc_cr429" target={"blank"}> 
                                     <img
                                         src={theWalk}
                                         alt=""
