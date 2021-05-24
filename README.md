@@ -18,7 +18,6 @@ As a user, I want to have a professional portfolio that has an easily identifiab
 
 HTML
 CSS
-JavaScript
 React
 MDBReact
 
@@ -32,13 +31,10 @@ Cors
 
 ## Details
 
-More details to come as it all comes together.
-
 The most difficult challenge in this project that I have overcome so far was setting up a fully-functioning contact form.
 
 ## Getting Started / Launch
 
-To test, contribute or just see what we did follow few easy steps:
 - clone the repository
 - cd to the directory with the repository
 - run `yarn install` (or `npm install` if you don't use yarn)
