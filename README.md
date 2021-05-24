@@ -10,7 +10,7 @@ As a user, I want to have a professional portfolio that has an easily identifiab
 
 ## Deployed Site
 
-[Matthew Bell Portfolio](https://portfolio-mattbell.herokuapp.com/gallery_code "Deployed App on Heroku")
+[Matthew Bell Portfolio](https://portfolio-mattbell.herokuapp.com/ "Deployed App on Heroku")
 
 ## Technology
 
