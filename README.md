@@ -18,6 +18,7 @@ As a user, I want to have a professional portfolio that has an easily identifiab
 
 HTML
 CSS
+Javascript
 React
 MDBReact
 
