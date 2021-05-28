@@ -36,7 +36,7 @@ const Home = () => {
                         </strong>
                     </h4>
                     <p>
-                      Full Stack Web Developer with a background in 3D Animation and VFX 
+                      Web Developer/Designer with a background in 3D Animation and VFX 
                       with 4 years of experience in film and mobile video game production. 
                       I learn new skills quickly, with the ability to pivot and take on new 
                       challenges. I am seeking a transition into Web and Software Development.

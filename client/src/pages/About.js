@@ -35,7 +35,7 @@ const About = () => {
                       </strong>
                   </h4>
                   <p>
-                    I am a Full Stack Web Developer with a background in 3D Animation and VFX 
+                    I am a Web Developer/Designer with a background in 3D Animation and VFX 
                     with 4 years of experience in film and mobile video game production.  
                     Graduate of UCSD Coding Bootcamp, with skills in HTML, CSS, NodeJS, 
                     MongoDB, Express, React, and NodeJS.  I enjoy working in a challenging 
