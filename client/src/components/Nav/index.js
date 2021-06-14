@@ -22,6 +22,7 @@ import About from "../../pages/About";
 import Contact from "../../pages/Contact";
 import GalleryCode from "../../pages/GalleryCode";
 import GalleryVFX from "../../pages/GalleryVFX";
+import GalleryDesign from "../../pages/GalleryDesign";
   //pdf
 import Resume from "../../pages/MattBell-Resume.pdf";
 
@@ -68,6 +69,7 @@ render() {
                         <MDBDropdownMenu>
                             <MDBDropdownItem href="gallery_code">Web Development Gallery</MDBDropdownItem>
                             <MDBDropdownItem href="gallery_vfx">VFX Gallery</MDBDropdownItem>
+                            <MDBDropdownItem href="gallery_design">Web Design Gallery</MDBDropdownItem>
                         </MDBDropdownMenu>
                     </MDBDropdown>
                 </MDBNavItem>
@@ -100,6 +102,7 @@ render() {
               <Route path="/contact" component={Contact} />
               <Route path="/gallery_code" component={GalleryCode} />
               <Route path="/gallery_vfx" component={GalleryVFX} />
+              <Route path="/gallery_design" component={GalleryDesign} />
               <Route path="/home" component={Home} />
               <Route exact path="/" component={Home} />
             </Switch>
