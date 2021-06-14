@@ -19,7 +19,7 @@ import budgetTracker from "../images/projects/code/budget-tracker-square.png";
 import steadFast from "../images/projects/code/steadfast-logo-square.png";
 
 //PAGE
-const GalleryVFX = () => {
+const GalleryCODE = () => {
         return (
             <div className='pageContainer'>
                 <BgImage>
@@ -167,4 +167,4 @@ const GalleryVFX = () => {
         );
     }
 
-export default GalleryVFX;
+export default GalleryCODE;
