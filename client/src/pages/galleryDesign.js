@@ -12,7 +12,9 @@ import {
     //styles
 import './css/pages.css';
     //images
-import steadFast from "../images/projects/code/steadfast-logo-square.png";
+import portfolioDesign from "../images/projects/design/portfolioDesign.png";
+import surveyForm from "../images/projects/design/surveyForm.png";
+import technicalDoc from "../images/projects/design/technicalDocPHP.png";
 
 //PAGE
 const GalleryDESIGN = () => {
@@ -38,7 +40,7 @@ const GalleryDESIGN = () => {
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                 <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
                                     <img
-                                        src={steadFast}
+                                        src={portfolioDesign}
                                         alt="portfolio design"
                                         className="img-fluid rounded z-depth-2 projectImage"
                                     />
@@ -48,14 +50,14 @@ const GalleryDESIGN = () => {
                                     <p className="white-text mb-2">
                                         
                                     </p>
-                                    <a href="https://github.com/Mbell42/steadfast-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                    <a href="https://github.com/Mbell42/ResponsiveWebDesigns-Portfolio-project" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                 </MDBCardBody>
                             </MDBCol>
                             {/* survey form project */}
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                 <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
                                     <img
-                                        src={steadFast}
+                                        src={surveyForm}
                                         alt="survey form design"
                                         className="img-fluid rounded z-depth-2 projectImage"
                                     />
@@ -65,14 +67,14 @@ const GalleryDESIGN = () => {
                                     <p className="white-text mb-2">
                                         
                                     </p>
-                                    <a href="https://github.com/Mbell42/steadfast-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                    <a href="https://github.com/Mbell42/ResponsiveWebDesign-surveyForm-project" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                 </MDBCardBody>
                             </MDBCol>
                             {/* technical doc-PHP project */}
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                 <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
                                     <img
-                                        src={steadFast}
+                                        src={technicalDoc}
                                         alt="technical document design"
                                         className="img-fluid rounded z-depth-2 projectImage"
                                     />
@@ -82,7 +84,7 @@ const GalleryDESIGN = () => {
                                     <p className="white-text mb-2">
                                         
                                     </p>
-                                    <a href="https://github.com/Mbell42/steadfast-school" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
+                                    <a href="https://github.com/Mbell42/ResponsiveWebDesigns-technicalDocument-PHP-project" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                 </MDBCardBody>
                             </MDBCol>
                         </MDBRow>
