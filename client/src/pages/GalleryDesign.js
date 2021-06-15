@@ -71,7 +71,7 @@ const GalleryDESIGN = () => {
                                 </MDBCardBody>
                             </MDBCol>
                             {/* technical doc-PHP project */}
-                            <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
+                            {/* <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                                 <a href="https://technical-doc-design.herokuapp.com/" target={"blank"}>
                                     <img
                                         src={technicalDoc}
@@ -86,7 +86,7 @@ const GalleryDESIGN = () => {
                                     </p>
                                     <a href="https://github.com/Mbell42/ResponsiveWebDesigns-technicalDocument-PHP-project" target={"blank"} className="gitLink"><MDBBtn gradient="purple">Github Link</MDBBtn></a>
                                 </MDBCardBody>
-                            </MDBCol>
+                            </MDBCol> */}
                         </MDBRow>
                         {/* End Projects Section */}
                     </MDBCol>
