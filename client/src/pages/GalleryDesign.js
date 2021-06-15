@@ -38,7 +38,7 @@ const GalleryDESIGN = () => {
                         <MDBRow className="text-center flex-row">
                         {/* portfolio design project */}
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
+                                <a href="https://portfolio-practice-design.herokuapp.com/" target={"blank"}>
                                     <img
                                         src={portfolioDesign}
                                         alt="portfolio design"
@@ -55,7 +55,7 @@ const GalleryDESIGN = () => {
                             </MDBCol>
                             {/* survey form project */}
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
+                                <a href="https://survey-form-design.herokuapp.com/" target={"blank"}>
                                     <img
                                         src={surveyForm}
                                         alt="survey form design"
@@ -72,7 +72,7 @@ const GalleryDESIGN = () => {
                             </MDBCol>
                             {/* technical doc-PHP project */}
                             <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                                <a href="https://steadfast-school.herokuapp.com/" target={"blank"}>
+                                <a href="https://technical-doc-design.herokuapp.com/" target={"blank"}>
                                     <img
                                         src={technicalDoc}
                                         alt="technical document design"
